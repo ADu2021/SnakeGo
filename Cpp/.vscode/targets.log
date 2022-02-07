@@ -1,0 +1,301 @@
+C:\Program Files (x86)\GnuWin32\bin\make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-pc-mingw32
+ 
+
+# Make data base, printed on Sat Feb 05 09:43:36 2022
+
+# ����
+
+# ����
+POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Home China
+# �Զ�
+?F = $(notdir $?)
+# �Զ�
+<D = $(patsubst %/,%,$(dir $<))
+# makefile
+MAKEFLAGS = Rrqp
+# ����
+VSCODE_LOG_NATIVE = false
+# �Զ�
+?D = $(patsubst %/,%,$(dir $?))
+# �Զ�
+@D = $(patsubst %/,%,$(dir $@))
+# ����
+HOMEDRIVE = C:
+# �Զ�
+@F = $(notdir $@)
+# �Զ�
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR := c:/Users/sheep/Desktop/SnakeGo/Cpp
+# Ĭ��
+SHELL := sh.exe
+# ����
+WINDIR = C:\Windows
+# ����
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"85dc8b33bfa057e31dfd84e9a10f67e1.zh-cn","_translationsConfigFile":"C:\\Users\\sheep\\AppData\\Roaming\\Code\\clp\\85dc8b33bfa057e31dfd84e9a10f67e1.zh-cn\\tcf.json","_cacheRoot":"C:\\Users\\sheep\\AppData\\Roaming\\Code\\clp\\85dc8b33bfa057e31dfd84e9a10f67e1.zh-cn","_resolvedLanguagePackCoreLocation":"C:\\Users\\sheep\\AppData\\Roaming\\Code\\clp\\85dc8b33bfa057e31dfd84e9a10f67e1.zh-cn\\899d46d82c4c95423fb7e10e68eba52050e30ba3","_corruptedFile":"C:\\Users\\sheep\\AppData\\Roaming\\Code\\clp\\85dc8b33bfa057e31dfd84e9a10f67e1.zh-cn\\corrupted.info","_languagePackSupport":true}
+# ����
+ONEDRIVE = C:\Users\sheep\OneDrive
+# ����
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from `makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# ����
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# ����
+TMP = C:\Users\sheep\AppData\Local\Temp
+# ����
+VSCODE_VERBOSE_LOGGING = true
+# ����
+PROGRAMW6432 = C:\Program Files
+# ����
+PROGRAMDATA = C:\ProgramData
+# ����
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-5101bc64-e0e9-4f5f-b7d7-86509c91049a-sock
+# ����
+VSCODE_CWD = C:\Users\sheep\AppData\Local\Programs\Microsoft VS Code
+# ����
+PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Dev-Cpp\MinGW32\bin;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\texlive\2021\bin\win32;C:\Program Files\PowerShell\7\;C:\Program Files (x86)\dotnet\;C:\Users\sheep\AppData\Local\Programs\Python\Python39;C:\Program Files (x86)\GnuWin32\bin;C:\Users\sheep\AppData\Local\Microsoft\WindowsApps;C:\Users\sheep\.dotnet\tools;C:\Users\sheep\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sheep\AppData\Local\GitHubDesktop\bin
+# ����
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# ����
+ZES_ENABLE_SYSMAN = 1
+# ����
+PROCESSOR_ARCHITECTURE = x86
+# ����
+USERPROFILE = C:\Users\sheep
+# ����
+ALLUSERSPROFILE = C:\ProgramData
+# ����
+VSCODE_LOG_STACK = false
+# ����
+NUMBER_OF_PROCESSORS = 8
+# ����
+ELECTRON_RUN_AS_NODE = 1
+# Ĭ��
+.FEATURES := target-specific order-only second-expansion else-if archives
+# �Զ�
+%F = $(notdir $%)
+# ����
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14508_BLBNKCDZHAIOATYU
+# ����
+VSCODE_PIPE_LOGGING = true
+# ����
+COMPUTERNAME = LAPTOP-L3M0Q453
+# ����
+PROGRAMFILES = C:\Program Files (x86)
+# ����
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# ����
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# ����
+USERNAME = sheep
+# ����
+PUBLIC = C:\Users\Public
+# ����
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# ����
+VS90COMNTOOLS = c:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\Tools\
+# ����
+VSCODE_CODE_CACHE_PATH = C:\Users\sheep\AppData\Roaming\Code\CachedData\899d46d82c4c95423fb7e10e68eba52050e30ba3
+# ����
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# ����
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# ����
+LOGONSERVER = \\LAPTOP-L3M0Q453
+# ����
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# ����
+USERDOMAIN = LAPTOP-L3M0Q453
+# makefile (from `makefile', line 2)
+LD_LIB = -lws2_32
+# Ĭ��
+MAKE = $(MAKE_COMMAND)
+# Ĭ��
+MAKECMDGOALS := all
+# Ĭ��
+MAKE_VERSION := 3.81
+# makefile
+.DEFAULT_GOAL := main
+# ����
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# �Զ�
+%D = $(patsubst %/,%,$(dir $%))
+# ����
+LOCALAPPDATA = C:\Users\sheep\AppData\Local
+# ����
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+# Ĭ��
+MAKE_COMMAND := C:/Program Files (x86)/GnuWin32/bin/make
+# ����
+PROCESSOR_ARCHITEW6432 = AMD64
+# Ĭ��
+.VARIABLES := 
+# �Զ�
+*F = $(notdir $*)
+# ����
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+# ����
+OS = Windows_NT
+# ����
+VSCODE_IPC_HOOK = \\.\pipe\fd142c4061e64041428e6f561dfa1e70-1.63.2-main-sock
+# ����
+HOMEPATH = \Users\sheep
+# ����
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# ����
+PROMPT = $P$G
+# ����
+MFLAGS = -Rrqp
+# �Զ�
+*D = $(patsubst %/,%,$(dir $*))
+# ����
+SYSTEMROOT = C:\Windows
+# �Զ�
++D = $(patsubst %/,%,$(dir $+))
+# �Զ�
++F = $(notdir $+)
+# ����
+APPDATA = C:\Users\sheep\AppData\Roaming
+# ����
+TEMP = C:\Users\sheep\AppData\Local\Temp
+# ����
+COMSPEC = C:\Windows\system32\cmd.exe
+# Ĭ��
+MAKEFILES := 
+# �Զ�
+<F = $(notdir $<)
+# ����
+LC_ALL = C
+# �Զ�
+^F = $(notdir $^)
+# Ĭ��
+SUFFIXES := 
+# ����
+SYSTEMDRIVE = C:
+# ����
+SESSIONNAME = Console
+# ����
+PROCESSOR_REVISION = 8c01
+# ����
+MAKELEVEL := 0
+# ����
+LANG = C
+# ����
+PROCESSOR_LEVEL = 6
+# ����
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# ����
+VSCODE_PID = 14508
+# ����
+USERDOMAIN_ROAMINGPROFILE = LAPTOP-L3M0Q453
+# variable set hash-table stats:
+# Load=92/1024=9%, Rehash=0, Collisions=10/114=9%
+
+# Pattern-specific Variable Values
+
+# û�� pattern-specific ������ֵ��
+
+# Ŀ¼
+
+# C:\Users\sheep\.dotnet\tools���޷�������� stat ������
+# C:\Users\sheep\AppData\Local\Programs\Python\Python39 (�ؼ��� C:/Users/sheep/AppData/Local 
+/Programs/Python/Python39���޸�ʱ�� 1630831218)��18 �ļ��� �� impossibilities.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (�ؼ��� C:/Windows/System32/WindowsPowerShell/v1.0/���޸�ʱ�� 1616309237)��31 �ļ��� �� impossibilities.
+# C:\Windows\System32\Wbem (�ؼ��� C:/Windows/System32/Wbem���޸�ʱ�� 1642326863)��155 �ļ��� �� impossibilities.
+# . (�ؼ��� c:/Users/sheep/Desktop/SnakeGo/Cpp���޸�ʱ�� 1643440804)��8 �ļ��� �� impossibilities.
+# C:\Program Files (x86)\Dev-Cpp\MinGW32\bin (�ؼ��� C:/Program Files (x86)/Dev-Cpp/MinGW32/bin���޸�ʱ�� 1631104302)��68 �ļ��� �� impossibilities.
+# C:\Users\sheep\AppData\Local\Microsoft\WindowsApps (�ؼ��� C:/Users/sheep/AppData/Local/Microsoft/WindowsApps���޸�ʱ�� 1639553444)��13 �ļ��� �� impossibilities.
+# C:\Program Files\dotnet\ (�ؼ��� C:/Program Files/dotnet/���޸�ʱ�� 1642309921)��11 �ļ��� �� impossibilities.
+# C:\Program Files\PowerShell\7\ (�ؼ��� C:/Program Files/PowerShell/7/���޸�ʱ�� 1641813781)��478 �ļ��� �� impossibilities.
+# C:\Windows\System32\OpenSSH\���޷�������� stat ������
+# C:\Program Files (x86)\texlive\2021\bin\win32 (�ؼ��� C:/Program Files (x86)/texlive/2021/bin/win32���޸�ʱ�� 1640169065)��547 �ļ��� �� impossibilities.
+# C:\Windows (�ؼ��� C:/Windows���޸�ʱ�� 1643638751)��134 �ļ��� �� impossibilities.
+# C:\Program Files (x86)\dotnet\ (�ؼ��� C:/Program Files (x86)/dotnet/���޸�ʱ�� 1642309965)��8 �ļ��� �� impossibilities.
+# c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\ (�ؼ��� c:/Program Files (x86)/Microsoft SQL Server/90/Tools/binn/���޸�ʱ�� 1631665464)��16 �ļ��� �� impossibilities.
+# C:\Users\sheep\AppData\Local\GitHubDesktop\bin (�ؼ��� C:/Users/sheep/AppData/Local/GitHubDesktop/bin���޸�ʱ�� 1641816258)��4 �ļ��� �� impossibilities.
+# C:\Program Files\Git\cmd (�ؼ��� C:/Program Files/Git/cmd���޸�ʱ�� 1630832801)��8 �ļ��� �� impossibilities.
+# C:\Windows\system32 (�ؼ��� C:/Windows/system32���޸�ʱ�� 1643958815)��3042 �ļ��� �� impossibilities.
+# C:\Users\sheep\AppData\Local\Programs\Microsoft VS Code\bin (�ؼ��� C:/Us 
+ers/sheep/AppData/Local/Programs/Microsoft VS Code/bin���޸�ʱ�� 1641813032)��4 �ļ��� �� impossibilities.
+# C:\Program Files (x86)\GnuWin32\bin (�ؼ��� C:/Program Files (x86)/GnuWin32/bin���޸�ʱ�� 1642816427)��5 �ļ��� �� impossibilities.
+
+# 4550 �ļ��� �� impossibilities in 19 directories.
+
+# Implicit Rules
+
+# û����������
+
+# �ļ�
+
+# ����һ��Ŀ�꣺
+all:
+#  ������Ŀ�ꡣ
+#  �������������������ɡ�
+#  �ļ������ڡ�
+#  �ļ���δ�����¡�
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0 
+/0=0%
+
+# ����һ��Ŀ�꣺
+.DEFAULT:
+#  �����������������δ��ɡ�
+#  �Ӳ�����޸�ʱ�䡣
+#  �ļ���δ�����¡�
+
+# ����һ��Ŀ�꣺
+makefile:
+#  �������������������ɡ�
+#  ������� 2022-01-22 10:14:47
+#  �ļ��Ѿ������¡�
+#  ���³ɹ���
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# ����һ��Ŀ�꣺
+main.cpp:
+#  �����������������δ��ɡ�
+#  �Ӳ�����޸�ʱ�䡣
+#  �ļ���δ�����¡�
+
+# ����һ��Ŀ�꣺
+.SUFFIXES:
+#  �����������������δ��ɡ�
+#  �Ӳ�����޸�ʱ�䡣
+#  �ļ���δ�����¡�
+
+main: 
+make: *** û�й�����Դ���Ŀ�ꡰall���� ֹͣ��
+ 
+ main.cpp
+#  �����������������δ��ɡ�
+#  �Ӳ�����޸�ʱ�䡣
+#  �ļ���δ�����¡�
+#  Ҫִ�е����� (�ӡ�makefile������ 6)��
+	g++ main.cpp -o main -O2 -I. -std=c++11 $(LD_LIB)
+	
+
+# files hash-table stats:
+# Load=6/1024=1%, Rehash=0, Collisions=0/18=0%
+# VPATH ����·��
+
+# û�С�vpath������·����
+
+# û��ͨ������·��(��VPATH������)��
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Sat Feb 05 09:43:36 2022
+
+ 

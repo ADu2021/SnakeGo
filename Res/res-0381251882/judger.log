@@ -1,0 +1,426 @@
+2022-02-05 17:32:54,542 | DEBUG | logger:27 | Logging to file C:\Users\sheep\Desktop\SnakeGo\Res\res-0381251882\judger.log is successfully enabled
+2022-02-05 17:32:54,571 | INFO | judger:323 | Judger server is running at ('127.0.0.1', 55244), ('::1', 55244, 0, 0)
+2022-02-05 17:32:56,148 | INFO | judger:204 | A new AI is connected
+2022-02-05 17:32:56,148 | INFO | judger:166 | Attached to AI[id=0] reader
+2022-02-05 17:32:56,148 | INFO | judger:189 | Attached to AI[id=0] writer
+2022-02-05 17:32:57,387 | INFO | judger:204 | A new AI is connected
+2022-02-05 17:32:57,387 | INFO | judger:137 | The number of players is sufficient. LINK START!
+2022-02-05 17:32:57,391 | INFO | judger:166 | Attached to AI[id=1] reader
+2022-02-05 17:32:57,392 | INFO | judger:189 | Attached to AI[id=1] writer
+2022-02-05 17:32:57,392 | INFO | judger:113 | Attached to logic stdin
+2022-02-05 17:32:57,392 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00\x88{"player_list": [1, 1], "player_num": 2, "config": {}, "replay": "C:\\\\Users\\\\sheep\\\\Desktop\\\\SnakeGo\\\\Res\\\\res-0381251882\\\\replay.json"}'
+2022-02-05 17:32:57,393 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:57,393 | INFO | judger:81 | Attached to logic stdout
+2022-02-05 17:32:57,393 | INFO | judger:93 | Attached to Logic stderr
+2022-02-05 17:32:57,393 | DEBUG | judger:97 | Logic stderr will also be logged into file: C:\Users\sheep\Desktop\SnakeGo\Res\res-0381251882\logic_stderr.txt
+2022-02-05 17:32:57,752 | DEBUG | judger:87 | Logic is sending 5 bytes of data to target 0: b'\x10\x10\x02\x00\x00'
+2022-02-05 17:32:57,752 | DEBUG | judger:87 | Logic is sending 5 bytes of data to target 1: b'\x10\x10\x02\x00\x01'
+2022-02-05 17:32:57,752 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:57,752 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:57,752 | DEBUG | judger:87 | Logic is sending 920 bytes of data to target 0: b'\x10\x00\x83\x06\x08\x02\x00\x08\x02\x00\x08\x06\x02\x00\n\x02\x00\x06\x07\x00\x00\x11\x00\x02\x08\t\x00\x00\x12\x00\x03\x07\x08\x00\x00\x13\x00\x04\x08\x05\x00\x00\x18\x00\x03\x07\x06\x00\x00!\x00\x05\n\x07\x00\x00%\x00\x05\t\n\x00\x00+\x00\x04\x05\t\x00\x000\x00\x05\x06\t\x00\x008\x00\x04\x06\x0b\x02\x00=\x02\x00\n\x0b\x00\x00B\x00\x04\x07\x05\x00\x00C\x00\x05\x04\n\x00\x00D\x00\x01\x04\x08\x00\x00I\x00\x01\x05\x03\x00\x00J\x00\x01\x03\t\x02\x00L\x02\x00\x07\x07\x00\x00N\x00\x02\x0b\x04\x00\x00T\x00\x05\x06\x05\x00\x00Y\x00\x04\x03\x05\x00\x00[\x00\x03\x05\x04\x00\x00c\x00\x05\x03\n\x00\x00d\x00\x04\x01\x02\x02\x00p\x02\x00\r\x01\x00\x00s\x00\x01\t\x08\x00\x00~\x00\x04\x0c\x00\x00\x00\x81\x00\x01\n\x05\x00\x00\x84\x00\x01\x06\r\x00\x00\x86\x00\x02\x02\x0e\x02\x00\x8a\x02\x00\x05\x00\x00\x00\x8d\x00\x04\x07\x03\x00\x00\x8e\x00\x05\x0e\n\x00\x00\x90\x00\x05\x02\x02\x02\x00\x91\x02\x00\r\x03\x00\x00\x92\x00\x02\t\x07\x00\x00\x98\x00\x01\x0c\x02\x00\x00\xa5\x00\x02\x01\x02\x00\x00\xa6\x00\x01\x03\x07\x00\x00\xa9\x00\x02\x04\x0f\x02\x00\xad\x02\x00\x01\x00\x00\x00\xae\x00\x01\x00\r\x02\x00\xb1\x02\x00\x0e\x04\x02\x00\xb5\x02\x00\x00\t\x00\x00\xba\x00\x05\t\x01\x02\x00\xc0\x02\x00\x00\x0e\x00\x00\xc6\x00\x03\x08\x08\x00\x00\xca\x00\x03\r\x0c\x00\x00\xd0\x00\x04\x07\x02\x02\x00\xda\x02\x00\x0f\n\x02\x00\xdb\x02\x00\x05\x06\x02\x00\xde\x02\x00\t\x00\x00\x00\xe1\x00\x04\x00\x0b\x00\x00\xe7\x00\x01\x03\x0e\x02\x00\xec\x02\x00\x0f\x04\x00\x00\xed\x00\x05\x04\x03\x00\x00\xf0\x00\x04\x0f\x05\x00\x00\xf2\x00\x02\x08\x00\x00\x00\xf3\x00\x02\x0e\x07\x00\x00\xf8\x00\x05\n\x02\x00\x00\xfd\x00\x01\x02\x00\x00\x01\x02\x00\x02\x06\t\x02\x01\x04\x02\x00\x08\x0c\x00\x01\t\x00\x01\x07\x07\x00\x01\x0b\x00\x01\r\x07\x00\x01\x10\x00\x02\x07\x0e\x00\x01\x11\x00\x04\x07\x06\x00\x01\x13\x00\x02\x0c\x0e\x02\x01\x19\x02\x00\x0c\x04\x00\x01\x1a\x00\x02\x03\x02\x00\x01\x1f\x00\x04\n\x07\x02\x01&\x02\x00\x08\x05\x02\x01*\x02\x00\x0b\x07\x00\x01+\x00\x02\x03\x0c\x02\x010\x02\x00\x08\x0b\x00\x011\x00\x03\t\x0f\x00\x013\x00\x05\x07\x01\x02\x014\x02\x00\x02\x05\x02\x015\x02\x00\x0f\x06\x00\x017\x00\x02\x0e\x03\x02\x018\x02\x00\x05\r\x00\x01@\x00\x02\x0f\x07\x02\x01D\x02\x00\x06\t\x02\x01E\x02\x00\r\r\x00\x01K\x00\x02\x0f\n\x02\x01L\x02\x00\x02\x07\x00\x01M\x00\x05\n\x02\x02\x01V\x02\x00\x06\t\x00\x01X\x00\x04\x02\r\x02\x01[\x02\x00\x04\x08\x02\x01^\x02\x00\x04\x04\x00\x01_\x00\x01\x0e\x04\x00\x01f\x00\x04\n\x02\x00\x01i\x00\x05\x01\x06\x02\x01j\x02\x00\x08\x0e\x00\x01k\x00\x03\x0e\x0c\x00\x01p\x00\x02\x04\x03\x00\x01q\x00\x01\x03\x0c\x00\x01x\x00\x04\x00\x04\x02\x01}\x02\x00\x03\x03\x02\x01~\x02\x00\x03\x04\x00\x01\x86\x00\x04\x02\r\x02\x01\x8a\x02\x00\x0e\x06\x02\x01\x8c\x02\x00\x02\x0e\x02\x01\x8f\x02\x00\x0b\n\x00\x01\x99\x00\x02\x0c\n\x02\x01\xaa\x02\x00\x05\x03\x02\x01\xaf\x02\x00\x04\x0c\x00\x01\xb0\x00\x03\t\x03\x02\x01\xb1\x02\x00\x0e\x05\x00\x01\xb4\x00\x05\x0c\x00\x00\x01\xb9\x00\x03\t\x06\x00\x01\xba\x00\x03\x07\x03\x02\x01\xbb\x02\x00\x02\x06\x02\x01\xc6\x02\x00\x03\x08\x02\x01\xc9\x02\x00\x04\x04\x00\x01\xd0\x00\x05\x0c\x03\x00\x01\xd2\x00\x05\r\t\x00\x01\xd5\x00\x05\t\x08\x00\x01\xd9\x00\x01\t\x07\x02\x01\xdd\x02\x00\x04\x0c\x00\x01\xe2\x00\x05\x02\x0c\x02\x01\xe4\x02\x00\x0f\n\x00\x01\xe6\x00\x03\x0c\x08\x02\x01\xec\x02\x00\x0b\n\x02\x01\xed\x02\x00\x0f\x0c\x00\x01\xf5\x00\x02\x06\x0b\x02\x01\xf8\x02\x00\x03\x04\x02\x01\xfd\x02\x00\x0e\x03\x00\x01\xfe\x00\x03\x06\x06\x00\x02\x00\x00\x05'
+2022-02-05 17:32:57,752 | DEBUG | judger:87 | Logic is sending 920 bytes of data to target 1: b'\x10\x00\x83\x06\x08\x02\x00\x08\x02\x00\x08\x06\x02\x00\n\x02\x00\x06\x07\x00\x00\x11\x00\x02\x08\t\x00\x00\x12\x00\x03\x07\x08\x00\x00\x13\x00\x04\x08\x05\x00\x00\x18\x00\x03\x07\x06\x00\x00!\x00\x05\n\x07\x00\x00%\x00\x05\t\n\x00\x00+\x00\x04\x05\t\x00\x000\x00\x05\x06\t\x00\x008\x00\x04\x06\x0b\x02\x00=\x02\x00\n\x0b\x00\x00B\x00\x04\x07\x05\x00\x00C\x00\x05\x04\n\x00\x00D\x00\x01\x04\x08\x00\x00I\x00\x01\x05\x03\x00\x00J\x00\x01\x03\t\x02\x00L\x02\x00\x07\x07\x00\x00N\x00\x02\x0b\x04\x00\x00T\x00\x05\x06\x05\x00\x00Y\x00\x04\x03\x05\x00\x00[\x00\x03\x05\x04\x00\x00c\x00\x05\x03\n\x00\x00d\x00\x04\x01\x02\x02\x00p\x02\x00\r\x01\x00\x00s\x00\x01\t\x08\x00\x00~\x00\x04\x0c\x00\x00\x00\x81\x00\x01\n\x05\x00\x00\x84\x00\x01\x06\r\x00\x00\x86\x00\x02\x02\x0e\x02\x00\x8a\x02\x00\x05\x00\x00\x00\x8d\x00\x04\x07\x03\x00\x00\x8e\x00\x05\x0e\n\x00\x00\x90\x00\x05\x02\x02\x02\x00\x91\x02\x00\r\x03\x00\x00\x92\x00\x02\t\x07\x00\x00\x98\x00\x01\x0c\x02\x00\x00\xa5\x00\x02\x01\x02\x00\x00\xa6\x00\x01\x03\x07\x00\x00\xa9\x00\x02\x04\x0f\x02\x00\xad\x02\x00\x01\x00\x00\x00\xae\x00\x01\x00\r\x02\x00\xb1\x02\x00\x0e\x04\x02\x00\xb5\x02\x00\x00\t\x00\x00\xba\x00\x05\t\x01\x02\x00\xc0\x02\x00\x00\x0e\x00\x00\xc6\x00\x03\x08\x08\x00\x00\xca\x00\x03\r\x0c\x00\x00\xd0\x00\x04\x07\x02\x02\x00\xda\x02\x00\x0f\n\x02\x00\xdb\x02\x00\x05\x06\x02\x00\xde\x02\x00\t\x00\x00\x00\xe1\x00\x04\x00\x0b\x00\x00\xe7\x00\x01\x03\x0e\x02\x00\xec\x02\x00\x0f\x04\x00\x00\xed\x00\x05\x04\x03\x00\x00\xf0\x00\x04\x0f\x05\x00\x00\xf2\x00\x02\x08\x00\x00\x00\xf3\x00\x02\x0e\x07\x00\x00\xf8\x00\x05\n\x02\x00\x00\xfd\x00\x01\x02\x00\x00\x01\x02\x00\x02\x06\t\x02\x01\x04\x02\x00\x08\x0c\x00\x01\t\x00\x01\x07\x07\x00\x01\x0b\x00\x01\r\x07\x00\x01\x10\x00\x02\x07\x0e\x00\x01\x11\x00\x04\x07\x06\x00\x01\x13\x00\x02\x0c\x0e\x02\x01\x19\x02\x00\x0c\x04\x00\x01\x1a\x00\x02\x03\x02\x00\x01\x1f\x00\x04\n\x07\x02\x01&\x02\x00\x08\x05\x02\x01*\x02\x00\x0b\x07\x00\x01+\x00\x02\x03\x0c\x02\x010\x02\x00\x08\x0b\x00\x011\x00\x03\t\x0f\x00\x013\x00\x05\x07\x01\x02\x014\x02\x00\x02\x05\x02\x015\x02\x00\x0f\x06\x00\x017\x00\x02\x0e\x03\x02\x018\x02\x00\x05\r\x00\x01@\x00\x02\x0f\x07\x02\x01D\x02\x00\x06\t\x02\x01E\x02\x00\r\r\x00\x01K\x00\x02\x0f\n\x02\x01L\x02\x00\x02\x07\x00\x01M\x00\x05\n\x02\x02\x01V\x02\x00\x06\t\x00\x01X\x00\x04\x02\r\x02\x01[\x02\x00\x04\x08\x02\x01^\x02\x00\x04\x04\x00\x01_\x00\x01\x0e\x04\x00\x01f\x00\x04\n\x02\x00\x01i\x00\x05\x01\x06\x02\x01j\x02\x00\x08\x0e\x00\x01k\x00\x03\x0e\x0c\x00\x01p\x00\x02\x04\x03\x00\x01q\x00\x01\x03\x0c\x00\x01x\x00\x04\x00\x04\x02\x01}\x02\x00\x03\x03\x02\x01~\x02\x00\x03\x04\x00\x01\x86\x00\x04\x02\r\x02\x01\x8a\x02\x00\x0e\x06\x02\x01\x8c\x02\x00\x02\x0e\x02\x01\x8f\x02\x00\x0b\n\x00\x01\x99\x00\x02\x0c\n\x02\x01\xaa\x02\x00\x05\x03\x02\x01\xaf\x02\x00\x04\x0c\x00\x01\xb0\x00\x03\t\x03\x02\x01\xb1\x02\x00\x0e\x05\x00\x01\xb4\x00\x05\x0c\x00\x00\x01\xb9\x00\x03\t\x06\x00\x01\xba\x00\x03\x07\x03\x02\x01\xbb\x02\x00\x02\x06\x02\x01\xc6\x02\x00\x03\x08\x02\x01\xc9\x02\x00\x04\x04\x00\x01\xd0\x00\x05\x0c\x03\x00\x01\xd2\x00\x05\r\t\x00\x01\xd5\x00\x05\t\x08\x00\x01\xd9\x00\x01\t\x07\x02\x01\xdd\x02\x00\x04\x0c\x00\x01\xe2\x00\x05\x02\x0c\x02\x01\xe4\x02\x00\x0f\n\x00\x01\xe6\x00\x03\x0c\x08\x02\x01\xec\x02\x00\x0b\n\x02\x01\xed\x02\x00\x0f\x0c\x00\x01\xf5\x00\x02\x06\x0b\x02\x01\xf8\x02\x00\x03\x04\x02\x01\xfd\x02\x00\x0e\x03\x00\x01\xfe\x00\x03\x06\x06\x00\x02\x00\x00\x05'
+2022-02-05 17:32:57,752 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:57,752 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:57,752 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:57,752 | INFO | judger:271 | Round config received
+2022-02-05 17:32:57,752 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x10\x10\x02\x00\x00'
+2022-02-05 17:32:57,753 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x10\x10\x02\x00\x01'
+2022-02-05 17:32:57,753 | DEBUG | judger:87 | Logic is sending 57 bytes of data to target -1: b'{"state": 1, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:57,753 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:57,753 | INFO | judger:255 | Enter next round 1
+2022-02-05 17:32:57,753 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:57,754 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x10\x00\x83\x06\x08\x02\x00\x08\x02\x00\x08\x06\x02\x00\n\x02\x00\x06\x07\x00\x00\x11\x00\x02\x08\t\x00\x00\x12\x00\x03\x07\x08\x00\x00\x13\x00\x04\x08\x05\x00\x00\x18\x00\x03\x07\x06\x00\x00!\x00\x05\n\x07\x00\x00%\x00\x05\t\n\x00\x00+\x00\x04\x05\t\x00\x000\x00\x05\x06\t\x00\x008\x00\x04\x06\x0b\x02\x00=\x02\x00\n\x0b\x00\x00B\x00\x04\x07\x05\x00\x00C\x00\x05\x04\n\x00\x00D\x00\x01\x04\x08\x00\x00I\x00\x01\x05\x03\x00\x00J\x00\x01\x03\t\x02\x00L\x02\x00\x07\x07\x00\x00N\x00\x02\x0b\x04\x00\x00T\x00\x05\x06\x05\x00\x00Y\x00\x04\x03\x05\x00\x00[\x00\x03\x05\x04\x00\x00c\x00\x05\x03\n\x00\x00d\x00\x04\x01\x02\x02\x00p\x02\x00\r\x01\x00\x00s\x00\x01\t\x08\x00\x00~\x00\x04\x0c\x00\x00\x00\x81\x00\x01\n\x05\x00\x00\x84\x00\x01\x06\r\x00\x00\x86\x00\x02\x02\x0e\x02\x00\x8a\x02\x00\x05\x00\x00\x00\x8d\x00\x04\x07\x03\x00\x00\x8e\x00\x05\x0e\n\x00\x00\x90\x00\x05\x02\x02\x02\x00\x91\x02\x00\r\x03\x00\x00\x92\x00\x02\t\x07\x00\x00\x98\x00\x01\x0c\x02\x00\x00\xa5\x00\x02\x01\x02\x00\x00\xa6\x00\x01\x03\x07\x00\x00\xa9\x00\x02\x04\x0f\x02\x00\xad\x02\x00\x01\x00\x00\x00\xae\x00\x01\x00\r\x02\x00\xb1\x02\x00\x0e\x04\x02\x00\xb5\x02\x00\x00\t\x00\x00\xba\x00\x05\t\x01\x02\x00\xc0\x02\x00\x00\x0e\x00\x00\xc6\x00\x03\x08\x08\x00\x00\xca\x00\x03\r\x0c\x00\x00\xd0\x00\x04\x07\x02\x02\x00\xda\x02\x00\x0f\n\x02\x00\xdb\x02\x00\x05\x06\x02\x00\xde\x02\x00\t\x00\x00\x00\xe1\x00\x04\x00\x0b\x00\x00\xe7\x00\x01\x03\x0e\x02\x00\xec\x02\x00\x0f\x04\x00\x00\xed\x00\x05\x04\x03\x00\x00\xf0\x00\x04\x0f\x05\x00\x00\xf2\x00\x02\x08\x00\x00\x00\xf3\x00\x02\x0e\x07\x00\x00\xf8\x00\x05\n\x02\x00\x00\xfd\x00\x01\x02\x00\x00\x01\x02\x00\x02\x06\t\x02\x01\x04\x02\x00\x08\x0c\x00\x01\t\x00\x01\x07\x07\x00\x01\x0b\x00\x01\r\x07\x00\x01\x10\x00\x02\x07\x0e\x00\x01\x11\x00\x04\x07\x06\x00\x01\x13\x00\x02\x0c\x0e\x02\x01\x19\x02\x00\x0c\x04\x00\x01\x1a\x00\x02\x03\x02\x00\x01\x1f\x00\x04\n\x07\x02\x01&\x02\x00\x08\x05\x02\x01*\x02\x00\x0b\x07\x00\x01+\x00\x02\x03\x0c\x02\x010\x02\x00\x08\x0b\x00\x011\x00\x03\t\x0f\x00\x013\x00\x05\x07\x01\x02\x014\x02\x00\x02\x05\x02\x015\x02\x00\x0f\x06\x00\x017\x00\x02\x0e\x03\x02\x018\x02\x00\x05\r\x00\x01@\x00\x02\x0f\x07\x02\x01D\x02\x00\x06\t\x02\x01E\x02\x00\r\r\x00\x01K\x00\x02\x0f\n\x02\x01L\x02\x00\x02\x07\x00\x01M\x00\x05\n\x02\x02\x01V\x02\x00\x06\t\x00\x01X\x00\x04\x02\r\x02\x01[\x02\x00\x04\x08\x02\x01^\x02\x00\x04\x04\x00\x01_\x00\x01\x0e\x04\x00\x01f\x00\x04\n\x02\x00\x01i\x00\x05\x01\x06\x02\x01j\x02\x00\x08\x0e\x00\x01k\x00\x03\x0e\x0c\x00\x01p\x00\x02\x04\x03\x00\x01q\x00\x01\x03\x0c\x00\x01x\x00\x04\x00\x04\x02\x01}\x02\x00\x03\x03\x02\x01~\x02\x00\x03\x04\x00\x01\x86\x00\x04\x02\r\x02\x01\x8a\x02\x00\x0e\x06\x02\x01\x8c\x02\x00\x02\x0e\x02\x01\x8f\x02\x00\x0b\n\x00\x01\x99\x00\x02\x0c\n\x02\x01\xaa\x02\x00\x05\x03\x02\x01\xaf\x02\x00\x04\x0c\x00\x01\xb0\x00\x03\t\x03\x02\x01\xb1\x02\x00\x0e\x05\x00\x01\xb4\x00\x05\x0c\x00\x00\x01\xb9\x00\x03\t\x06\x00\x01\xba\x00\x03\x07\x03\x02\x01\xbb\x02\x00\x02\x06\x02\x01\xc6\x02\x00\x03\x08\x02\x01\xc9\x02\x00\x04\x04\x00\x01\xd0\x00\x05\x0c\x03\x00\x01\xd2\x00\x05\r\t\x00\x01\xd5\x00\x05\t\x08\x00\x01\xd9\x00\x01\t\x07\x02\x01\xdd\x02\x00\x04\x0c\x00\x01\xe2\x00\x05\x02\x0c\x02\x01\xe4\x02\x00\x0f\n\x00\x01\xe6\x00\x03\x0c\x08\x02\x01\xec\x02\x00\x0b\n\x02\x01\xed\x02\x00\x0f\x0c\x00\x01\xf5\x00\x02\x06\x0b\x02\x01\xf8\x02\x00\x03\x04\x02\x01\xfd\x02\x00\x0e\x03\x00\x01\xfe\x00\x03\x06\x06\x00\x02\x00\x00\x05'
+2022-02-05 17:32:57,754 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x10\x00\x83\x06\x08\x02\x00\x08\x02\x00\x08\x06\x02\x00\n\x02\x00\x06\x07\x00\x00\x11\x00\x02\x08\t\x00\x00\x12\x00\x03\x07\x08\x00\x00\x13\x00\x04\x08\x05\x00\x00\x18\x00\x03\x07\x06\x00\x00!\x00\x05\n\x07\x00\x00%\x00\x05\t\n\x00\x00+\x00\x04\x05\t\x00\x000\x00\x05\x06\t\x00\x008\x00\x04\x06\x0b\x02\x00=\x02\x00\n\x0b\x00\x00B\x00\x04\x07\x05\x00\x00C\x00\x05\x04\n\x00\x00D\x00\x01\x04\x08\x00\x00I\x00\x01\x05\x03\x00\x00J\x00\x01\x03\t\x02\x00L\x02\x00\x07\x07\x00\x00N\x00\x02\x0b\x04\x00\x00T\x00\x05\x06\x05\x00\x00Y\x00\x04\x03\x05\x00\x00[\x00\x03\x05\x04\x00\x00c\x00\x05\x03\n\x00\x00d\x00\x04\x01\x02\x02\x00p\x02\x00\r\x01\x00\x00s\x00\x01\t\x08\x00\x00~\x00\x04\x0c\x00\x00\x00\x81\x00\x01\n\x05\x00\x00\x84\x00\x01\x06\r\x00\x00\x86\x00\x02\x02\x0e\x02\x00\x8a\x02\x00\x05\x00\x00\x00\x8d\x00\x04\x07\x03\x00\x00\x8e\x00\x05\x0e\n\x00\x00\x90\x00\x05\x02\x02\x02\x00\x91\x02\x00\r\x03\x00\x00\x92\x00\x02\t\x07\x00\x00\x98\x00\x01\x0c\x02\x00\x00\xa5\x00\x02\x01\x02\x00\x00\xa6\x00\x01\x03\x07\x00\x00\xa9\x00\x02\x04\x0f\x02\x00\xad\x02\x00\x01\x00\x00\x00\xae\x00\x01\x00\r\x02\x00\xb1\x02\x00\x0e\x04\x02\x00\xb5\x02\x00\x00\t\x00\x00\xba\x00\x05\t\x01\x02\x00\xc0\x02\x00\x00\x0e\x00\x00\xc6\x00\x03\x08\x08\x00\x00\xca\x00\x03\r\x0c\x00\x00\xd0\x00\x04\x07\x02\x02\x00\xda\x02\x00\x0f\n\x02\x00\xdb\x02\x00\x05\x06\x02\x00\xde\x02\x00\t\x00\x00\x00\xe1\x00\x04\x00\x0b\x00\x00\xe7\x00\x01\x03\x0e\x02\x00\xec\x02\x00\x0f\x04\x00\x00\xed\x00\x05\x04\x03\x00\x00\xf0\x00\x04\x0f\x05\x00\x00\xf2\x00\x02\x08\x00\x00\x00\xf3\x00\x02\x0e\x07\x00\x00\xf8\x00\x05\n\x02\x00\x00\xfd\x00\x01\x02\x00\x00\x01\x02\x00\x02\x06\t\x02\x01\x04\x02\x00\x08\x0c\x00\x01\t\x00\x01\x07\x07\x00\x01\x0b\x00\x01\r\x07\x00\x01\x10\x00\x02\x07\x0e\x00\x01\x11\x00\x04\x07\x06\x00\x01\x13\x00\x02\x0c\x0e\x02\x01\x19\x02\x00\x0c\x04\x00\x01\x1a\x00\x02\x03\x02\x00\x01\x1f\x00\x04\n\x07\x02\x01&\x02\x00\x08\x05\x02\x01*\x02\x00\x0b\x07\x00\x01+\x00\x02\x03\x0c\x02\x010\x02\x00\x08\x0b\x00\x011\x00\x03\t\x0f\x00\x013\x00\x05\x07\x01\x02\x014\x02\x00\x02\x05\x02\x015\x02\x00\x0f\x06\x00\x017\x00\x02\x0e\x03\x02\x018\x02\x00\x05\r\x00\x01@\x00\x02\x0f\x07\x02\x01D\x02\x00\x06\t\x02\x01E\x02\x00\r\r\x00\x01K\x00\x02\x0f\n\x02\x01L\x02\x00\x02\x07\x00\x01M\x00\x05\n\x02\x02\x01V\x02\x00\x06\t\x00\x01X\x00\x04\x02\r\x02\x01[\x02\x00\x04\x08\x02\x01^\x02\x00\x04\x04\x00\x01_\x00\x01\x0e\x04\x00\x01f\x00\x04\n\x02\x00\x01i\x00\x05\x01\x06\x02\x01j\x02\x00\x08\x0e\x00\x01k\x00\x03\x0e\x0c\x00\x01p\x00\x02\x04\x03\x00\x01q\x00\x01\x03\x0c\x00\x01x\x00\x04\x00\x04\x02\x01}\x02\x00\x03\x03\x02\x01~\x02\x00\x03\x04\x00\x01\x86\x00\x04\x02\r\x02\x01\x8a\x02\x00\x0e\x06\x02\x01\x8c\x02\x00\x02\x0e\x02\x01\x8f\x02\x00\x0b\n\x00\x01\x99\x00\x02\x0c\n\x02\x01\xaa\x02\x00\x05\x03\x02\x01\xaf\x02\x00\x04\x0c\x00\x01\xb0\x00\x03\t\x03\x02\x01\xb1\x02\x00\x0e\x05\x00\x01\xb4\x00\x05\x0c\x00\x00\x01\xb9\x00\x03\t\x06\x00\x01\xba\x00\x03\x07\x03\x02\x01\xbb\x02\x00\x02\x06\x02\x01\xc6\x02\x00\x03\x08\x02\x01\xc9\x02\x00\x04\x04\x00\x01\xd0\x00\x05\x0c\x03\x00\x01\xd2\x00\x05\r\t\x00\x01\xd5\x00\x05\t\x08\x00\x01\xd9\x00\x01\t\x07\x02\x01\xdd\x02\x00\x04\x0c\x00\x01\xe2\x00\x05\x02\x0c\x02\x01\xe4\x02\x00\x0f\n\x00\x01\xe6\x00\x03\x0c\x08\x02\x01\xec\x02\x00\x0b\n\x02\x01\xed\x02\x00\x0f\x0c\x00\x01\xf5\x00\x02\x06\x0b\x02\x01\xf8\x02\x00\x03\x04\x02\x01\xfd\x02\x00\x0e\x03\x00\x01\xfe\x00\x03\x06\x06\x00\x02\x00\x00\x05'
+2022-02-05 17:32:57,765 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x01'
+2022-02-05 17:32:57,765 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:57,765 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00/{"player": 0, "content": "\\u0001", "time": 0.0}'
+2022-02-05 17:32:57,765 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:57,766 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x01'
+2022-02-05 17:32:57,766 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x01'
+2022-02-05 17:32:57,766 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:57,766 | DEBUG | judger:87 | Logic is sending 57 bytes of data to target -1: b'{"state": 2, "listen": [1], "player": [], "content": []}\n'
+2022-02-05 17:32:57,766 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:57,766 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:57,766 | INFO | judger:271 | Round config received
+2022-02-05 17:32:57,766 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:57,766 | INFO | judger:258 | Enter next round 2. Last round took 0.000000 seconds.
+2022-02-05 17:32:57,766 | INFO | judger:285 | Now listening on player [1]
+2022-02-05 17:32:57,766 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x01'
+2022-02-05 17:32:57,767 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x01'
+2022-02-05 17:32:57,779 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=1]: b'\x02'
+2022-02-05 17:32:57,780 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:57,780 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00={"player": 1, "content": "\\u0002", "time": 16.00000000325963}'
+2022-02-05 17:32:57,780 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:57,780 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x02'
+2022-02-05 17:32:57,780 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x02'
+2022-02-05 17:32:57,780 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:57,780 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:57,781 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:57,781 | DEBUG | judger:87 | Logic is sending 57 bytes of data to target -1: b'{"state": 3, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:57,781 | INFO | judger:271 | Round config received
+2022-02-05 17:32:57,781 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:57,781 | INFO | judger:258 | Enter next round 3. Last round took 0.016000 seconds.
+2022-02-05 17:32:57,781 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:57,781 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x02'
+2022-02-05 17:32:57,781 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x02'
+2022-02-05 17:32:57,799 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x04'
+2022-02-05 17:32:57,799 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:57,799 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00>{"player": 0, "content": "\\u0004", "time": 30.999999988125637}'
+2022-02-05 17:32:57,799 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:57,799 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x04'
+2022-02-05 17:32:57,799 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x04'
+2022-02-05 17:32:57,799 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:57,799 | DEBUG | judger:87 | Logic is sending 57 bytes of data to target -1: b'{"state": 4, "listen": [1], "player": [], "content": []}\n'
+2022-02-05 17:32:57,799 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:57,799 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:57,799 | INFO | judger:271 | Round config received
+2022-02-05 17:32:57,799 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:57,801 | INFO | judger:258 | Enter next round 4. Last round took 0.031000 seconds.
+2022-02-05 17:32:57,801 | INFO | judger:285 | Now listening on player [1]
+2022-02-05 17:32:57,801 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x04'
+2022-02-05 17:32:57,801 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x04'
+2022-02-05 17:32:57,832 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=1]: b'\x03'
+2022-02-05 17:32:57,832 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:57,832 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00={"player": 1, "content": "\\u0003", "time": 32.00000000651926}'
+2022-02-05 17:32:57,832 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:57,833 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x03'
+2022-02-05 17:32:57,833 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x03'
+2022-02-05 17:32:57,833 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:57,833 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:57,833 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:57,833 | DEBUG | judger:87 | Logic is sending 57 bytes of data to target -1: b'{"state": 5, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:57,833 | INFO | judger:271 | Round config received
+2022-02-05 17:32:57,833 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:57,833 | INFO | judger:258 | Enter next round 5. Last round took 0.032000 seconds.
+2022-02-05 17:32:57,833 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:57,833 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x03'
+2022-02-05 17:32:57,834 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x03'
+2022-02-05 17:32:57,893 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x01'
+2022-02-05 17:32:57,893 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:57,893 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00>{"player": 0, "content": "\\u0001", "time": 62.000000005355105}'
+2022-02-05 17:32:57,894 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:57,894 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x01'
+2022-02-05 17:32:57,894 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x01'
+2022-02-05 17:32:57,894 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:57,894 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:57,894 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:57,894 | DEBUG | judger:87 | Logic is sending 57 bytes of data to target -1: b'{"state": 6, "listen": [1], "player": [], "content": []}\n'
+2022-02-05 17:32:57,894 | INFO | judger:271 | Round config received
+2022-02-05 17:32:57,894 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:57,894 | INFO | judger:258 | Enter next round 6. Last round took 0.062000 seconds.
+2022-02-05 17:32:57,894 | INFO | judger:285 | Now listening on player [1]
+2022-02-05 17:32:57,895 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x01'
+2022-02-05 17:32:57,895 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x01'
+2022-02-05 17:32:57,971 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=1]: b'\x02'
+2022-02-05 17:32:57,971 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:57,971 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00>{"player": 1, "content": "\\u0002", "time": 62.999999994644895}'
+2022-02-05 17:32:57,971 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:57,971 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x02'
+2022-02-05 17:32:57,972 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x02'
+2022-02-05 17:32:57,972 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:57,972 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:57,972 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:57,972 | DEBUG | judger:87 | Logic is sending 57 bytes of data to target -1: b'{"state": 7, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:57,972 | INFO | judger:271 | Round config received
+2022-02-05 17:32:57,972 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:57,972 | INFO | judger:258 | Enter next round 7. Last round took 0.078000 seconds.
+2022-02-05 17:32:57,972 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:57,972 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x02'
+2022-02-05 17:32:57,972 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x02'
+2022-02-05 17:32:58,069 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x04'
+2022-02-05 17:32:58,069 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:58,069 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00={"player": 0, "content": "\\u0004", "time": 93.99999999732245}'
+2022-02-05 17:32:58,069 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:58,069 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x04'
+2022-02-05 17:32:58,069 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x04'
+2022-02-05 17:32:58,069 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:58,069 | DEBUG | judger:87 | Logic is sending 57 bytes of data to target -1: b'{"state": 8, "listen": [1], "player": [], "content": []}\n'
+2022-02-05 17:32:58,069 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:58,069 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:58,070 | INFO | judger:271 | Round config received
+2022-02-05 17:32:58,070 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:58,070 | INFO | judger:258 | Enter next round 8. Last round took 0.094000 seconds.
+2022-02-05 17:32:58,070 | INFO | judger:285 | Now listening on player [1]
+2022-02-05 17:32:58,070 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x04'
+2022-02-05 17:32:58,071 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x04'
+2022-02-05 17:32:58,172 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=1]: b'\x01'
+2022-02-05 17:32:58,173 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:58,173 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00={"player": 1, "content": "\\u0001", "time": 93.99999999732245}'
+2022-02-05 17:32:58,173 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:58,173 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x01'
+2022-02-05 17:32:58,173 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x01'
+2022-02-05 17:32:58,173 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:58,173 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:58,173 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x01'
+2022-02-05 17:32:58,173 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x01'
+2022-02-05 17:32:58,173 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:58,173 | DEBUG | judger:87 | Logic is sending 57 bytes of data to target -1: b'{"state": 9, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:58,174 | INFO | judger:271 | Round config received
+2022-02-05 17:32:58,174 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:58,174 | INFO | judger:258 | Enter next round 9. Last round took 0.094000 seconds.
+2022-02-05 17:32:58,174 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:58,217 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x01'
+2022-02-05 17:32:58,217 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:58,218 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00={"player": 0, "content": "\\u0001", "time": 47.00000000593718}'
+2022-02-05 17:32:58,218 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:58,218 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x01'
+2022-02-05 17:32:58,218 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x01'
+2022-02-05 17:32:58,218 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:58,218 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:58,218 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:58,218 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 10, "listen": [1], "player": [], "content": []}\n'
+2022-02-05 17:32:58,218 | INFO | judger:271 | Round config received
+2022-02-05 17:32:58,218 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:58,218 | INFO | judger:258 | Enter next round 10. Last round took 0.047000 seconds.
+2022-02-05 17:32:58,218 | INFO | judger:285 | Now listening on player [1]
+2022-02-05 17:32:58,219 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x01'
+2022-02-05 17:32:58,219 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x01'
+2022-02-05 17:32:58,262 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=1]: b'\x02'
+2022-02-05 17:32:58,262 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:58,262 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00>{"player": 1, "content": "\\u0002", "time": 46.000000002095476}'
+2022-02-05 17:32:58,263 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:58,263 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x02'
+2022-02-05 17:32:58,263 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x02'
+2022-02-05 17:32:58,263 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:58,263 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:58,263 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:58,263 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 11, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:58,263 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x02'
+2022-02-05 17:32:58,263 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x02'
+2022-02-05 17:32:58,264 | INFO | judger:271 | Round config received
+2022-02-05 17:32:58,264 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:58,264 | INFO | judger:258 | Enter next round 11. Last round took 0.046000 seconds.
+2022-02-05 17:32:58,264 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:58,325 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x04'
+2022-02-05 17:32:58,325 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:58,325 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00>{"player": 0, "content": "\\u0004", "time": 62.999999994644895}'
+2022-02-05 17:32:58,325 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:58,326 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x04'
+2022-02-05 17:32:58,326 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x04'
+2022-02-05 17:32:58,326 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:58,326 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 12, "listen": [1], "player": [], "content": []}\n'
+2022-02-05 17:32:58,326 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:58,326 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:58,326 | INFO | judger:271 | Round config received
+2022-02-05 17:32:58,326 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:58,326 | INFO | judger:258 | Enter next round 12. Last round took 0.063000 seconds.
+2022-02-05 17:32:58,326 | INFO | judger:285 | Now listening on player [1]
+2022-02-05 17:32:58,327 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x04'
+2022-02-05 17:32:58,327 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x04'
+2022-02-05 17:32:58,384 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=1]: b'\x03'
+2022-02-05 17:32:58,384 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:58,385 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00>{"player": 1, "content": "\\u0003", "time": 62.000000005355105}'
+2022-02-05 17:32:58,385 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:58,385 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x03'
+2022-02-05 17:32:58,385 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x03'
+2022-02-05 17:32:58,385 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:58,385 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:58,385 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:58,385 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 13, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:58,385 | INFO | judger:271 | Round config received
+2022-02-05 17:32:58,385 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:58,385 | INFO | judger:258 | Enter next round 13. Last round took 0.062000 seconds.
+2022-02-05 17:32:58,385 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:58,386 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x03'
+2022-02-05 17:32:58,386 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x03'
+2022-02-05 17:32:58,483 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x01'
+2022-02-05 17:32:58,483 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:58,483 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00={"player": 0, "content": "\\u0001", "time": 93.99999999732245}'
+2022-02-05 17:32:58,483 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:58,483 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x01'
+2022-02-05 17:32:58,483 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x01'
+2022-02-05 17:32:58,484 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:58,484 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 14, "listen": [1], "player": [], "content": []}\n'
+2022-02-05 17:32:58,484 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:58,484 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:58,484 | INFO | judger:271 | Round config received
+2022-02-05 17:32:58,484 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:58,484 | INFO | judger:258 | Enter next round 14. Last round took 0.094000 seconds.
+2022-02-05 17:32:58,484 | INFO | judger:285 | Now listening on player [1]
+2022-02-05 17:32:58,484 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x01'
+2022-02-05 17:32:58,485 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x01'
+2022-02-05 17:32:58,579 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=1]: b'\x03'
+2022-02-05 17:32:58,580 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:58,580 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00={"player": 1, "content": "\\u0003", "time": 93.99999999732245}'
+2022-02-05 17:32:58,580 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:58,580 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x03'
+2022-02-05 17:32:58,580 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x03'
+2022-02-05 17:32:58,580 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:58,580 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:58,580 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:58,580 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 15, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:58,581 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x03'
+2022-02-05 17:32:58,581 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x03'
+2022-02-05 17:32:58,581 | INFO | judger:271 | Round config received
+2022-02-05 17:32:58,581 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:58,581 | INFO | judger:258 | Enter next round 15. Last round took 0.110000 seconds.
+2022-02-05 17:32:58,581 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:58,740 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x02'
+2022-02-05 17:32:58,740 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:58,741 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00>{"player": 0, "content": "\\u0002", "time": 156.00000000267755}'
+2022-02-05 17:32:58,741 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:58,741 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x02'
+2022-02-05 17:32:58,741 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x02'
+2022-02-05 17:32:58,741 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:58,741 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 16, "listen": [1], "player": [], "content": []}\n'
+2022-02-05 17:32:58,741 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:58,741 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:58,741 | INFO | judger:271 | Round config received
+2022-02-05 17:32:58,741 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:58,742 | INFO | judger:258 | Enter next round 16. Last round took 0.156000 seconds.
+2022-02-05 17:32:58,742 | INFO | judger:285 | Now listening on player [1]
+2022-02-05 17:32:58,742 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x02'
+2022-02-05 17:32:58,742 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x02'
+2022-02-05 17:32:58,867 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=1]: b'\x04'
+2022-02-05 17:32:58,867 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:58,867 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x001{"player": 1, "content": "\\u0004", "time": 125.0}'
+2022-02-05 17:32:58,867 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:58,867 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x04'
+2022-02-05 17:32:58,867 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x04'
+2022-02-05 17:32:58,867 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:58,867 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:58,868 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:58,868 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 17, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:58,868 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x04'
+2022-02-05 17:32:58,868 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x04'
+2022-02-05 17:32:58,868 | INFO | judger:271 | Round config received
+2022-02-05 17:32:58,868 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:58,868 | INFO | judger:258 | Enter next round 17. Last round took 0.125000 seconds.
+2022-02-05 17:32:58,868 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:58,965 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x02'
+2022-02-05 17:32:58,965 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:58,965 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00={"player": 0, "content": "\\u0002", "time": 93.99999999732245}'
+2022-02-05 17:32:58,965 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:58,965 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x02'
+2022-02-05 17:32:58,966 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x02'
+2022-02-05 17:32:58,966 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:58,966 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 18, "listen": [1], "player": [], "content": []}\n'
+2022-02-05 17:32:58,966 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:58,966 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:58,966 | INFO | judger:271 | Round config received
+2022-02-05 17:32:58,966 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:58,966 | INFO | judger:258 | Enter next round 18. Last round took 0.094000 seconds.
+2022-02-05 17:32:58,966 | INFO | judger:285 | Now listening on player [1]
+2022-02-05 17:32:58,966 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x02'
+2022-02-05 17:32:58,966 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x02'
+2022-02-05 17:32:59,057 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=1]: b'\x04'
+2022-02-05 17:32:59,057 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:59,057 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00={"player": 1, "content": "\\u0004", "time": 92.99999999348074}'
+2022-02-05 17:32:59,057 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:59,057 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x04'
+2022-02-05 17:32:59,057 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x04'
+2022-02-05 17:32:59,057 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:59,057 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:59,057 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x04'
+2022-02-05 17:32:59,057 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x04'
+2022-02-05 17:32:59,058 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:59,058 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 19, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:59,058 | INFO | judger:271 | Round config received
+2022-02-05 17:32:59,058 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:59,058 | INFO | judger:258 | Enter next round 19. Last round took 0.093000 seconds.
+2022-02-05 17:32:59,058 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:59,134 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x03'
+2022-02-05 17:32:59,134 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:59,134 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00={"player": 0, "content": "\\u0003", "time": 78.00000000861473}'
+2022-02-05 17:32:59,135 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:59,135 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x03'
+2022-02-05 17:32:59,135 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x03'
+2022-02-05 17:32:59,135 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:59,135 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 20, "listen": [1], "player": [], "content": []}\n'
+2022-02-05 17:32:59,135 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:59,135 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:59,135 | INFO | judger:271 | Round config received
+2022-02-05 17:32:59,135 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:59,135 | INFO | judger:258 | Enter next round 20. Last round took 0.078000 seconds.
+2022-02-05 17:32:59,136 | INFO | judger:285 | Now listening on player [1]
+2022-02-05 17:32:59,136 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x03'
+2022-02-05 17:32:59,136 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x03'
+2022-02-05 17:32:59,193 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=1]: b'\x01'
+2022-02-05 17:32:59,193 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:59,193 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00>{"player": 1, "content": "\\u0001", "time": 62.999999994644895}'
+2022-02-05 17:32:59,193 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:59,195 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x01'
+2022-02-05 17:32:59,195 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x01'
+2022-02-05 17:32:59,195 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:59,195 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:59,195 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:59,195 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 21, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:59,195 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x01'
+2022-02-05 17:32:59,195 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x01'
+2022-02-05 17:32:59,196 | INFO | judger:271 | Round config received
+2022-02-05 17:32:59,196 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:59,196 | INFO | judger:258 | Enter next round 21. Last round took 0.063000 seconds.
+2022-02-05 17:32:59,196 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:59,212 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x02'
+2022-02-05 17:32:59,212 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:59,213 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00={"player": 0, "content": "\\u0002", "time": 16.00000000325963}'
+2022-02-05 17:32:59,213 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:59,213 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x02'
+2022-02-05 17:32:59,213 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x02'
+2022-02-05 17:32:59,213 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:59,213 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:59,213 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x02'
+2022-02-05 17:32:59,213 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x02'
+2022-02-05 17:32:59,213 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:59,213 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 23, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:59,213 | INFO | judger:271 | Round config received
+2022-02-05 17:32:59,214 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:59,214 | INFO | judger:258 | Enter next round 23. Last round took 0.016000 seconds.
+2022-02-05 17:32:59,214 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:59,250 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x01'
+2022-02-05 17:32:59,251 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:59,251 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00>{"player": 0, "content": "\\u0001", "time": 31.000000002677552}'
+2022-02-05 17:32:59,251 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:59,251 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x01'
+2022-02-05 17:32:59,251 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x01'
+2022-02-05 17:32:59,251 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:59,251 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:59,252 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x01'
+2022-02-05 17:32:59,252 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x01'
+2022-02-05 17:32:59,252 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:59,252 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 25, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:59,252 | INFO | judger:271 | Round config received
+2022-02-05 17:32:59,252 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:59,252 | INFO | judger:258 | Enter next round 25. Last round took 0.031000 seconds.
+2022-02-05 17:32:59,252 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:59,289 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x06'
+2022-02-05 17:32:59,290 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:59,290 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00>{"player": 0, "content": "\\u0006", "time": 46.999999991385266}'
+2022-02-05 17:32:59,290 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:59,290 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x06'
+2022-02-05 17:32:59,290 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x06'
+2022-02-05 17:32:59,290 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:59,290 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:59,290 | DEBUG | judger:87 | Logic is sending 40 bytes of data to target -1: b'{"state": 0, "time": 3, "length": 2048}\n'
+2022-02-05 17:32:59,290 | DEBUG | judger:87 | Logic is sending 58 bytes of data to target -1: b'{"state": 27, "listen": [0], "player": [], "content": []}\n'
+2022-02-05 17:32:59,291 | INFO | judger:271 | Round config received
+2022-02-05 17:32:59,291 | INFO | judger:277 | Normal round information received
+2022-02-05 17:32:59,291 | INFO | judger:258 | Enter next round 27. Last round took 0.047000 seconds.
+2022-02-05 17:32:59,291 | INFO | judger:285 | Now listening on player [0]
+2022-02-05 17:32:59,291 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x06'
+2022-02-05 17:32:59,291 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x06'
+2022-02-05 17:32:59,363 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x01'
+2022-02-05 17:32:59,363 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:59,363 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00={"player": 0, "content": "\\u0001", "time": 78.00000000861473}'
+2022-02-05 17:32:59,363 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:59,364 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 0: b'\x01'
+2022-02-05 17:32:59,364 | DEBUG | judger:87 | Logic is sending 1 bytes of data to target 1: b'\x01'
+2022-02-05 17:32:59,364 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:59,364 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:59,364 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x01'
+2022-02-05 17:32:59,364 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x01'
+2022-02-05 17:32:59,364 | DEBUG | judger:175 | Received 1 bytes of data from ai[id=0]: b'\x05'
+2022-02-05 17:32:59,364 | INFO | judger:179 | Received data from listened ai. Forwarding to logic.
+2022-02-05 17:32:59,364 | DEBUG | judger:116 | Send data to logic: b'\x00\x00\x00={"player": 0, "content": "\\u0005", "time": 78.00000000861473}'
+2022-02-05 17:32:59,364 | DEBUG | judger:119 | Send complete
+2022-02-05 17:32:59,365 | DEBUG | judger:104 | Logic STDERR: b"ERROR:[Logic.main:186]: (<ErrorType.IA: 3>, 0, 'No item!!!')\r\n"
+2022-02-05 17:32:59,365 | DEBUG | judger:87 | Logic is sending 7 bytes of data to target 0: b'\x11\x11\x01\xff\x9c\x00\x08'
+2022-02-05 17:32:59,365 | DEBUG | judger:87 | Logic is sending 7 bytes of data to target 1: b'\x11\x11\x01\xff\x9c\x00\x08'
+2022-02-05 17:32:59,365 | INFO | judger:299 | Directly forwarding data to AI 0
+2022-02-05 17:32:59,365 | INFO | judger:299 | Directly forwarding data to AI 1
+2022-02-05 17:32:59,365 | DEBUG | judger:192 | Send data to ai[id=0]: b'\x11\x11\x01\xff\x9c\x00\x08'
+2022-02-05 17:32:59,365 | DEBUG | judger:192 | Send data to ai[id=1]: b'\x11\x11\x01\xff\x9c\x00\x08'
+2022-02-05 17:32:59,369 | DEBUG | judger:87 | Logic is sending 86 bytes of data to target -1: b'{"state": -1, "end_info": "{\\"0\\": -100, \\"1\\": 8}", "end_state": "[\\"IA\\", \\"OK\\"]"}\n'
+2022-02-05 17:32:59,369 | INFO | judger:292 | Game over. Result: [-100, 8]
+2022-02-05 17:32:59,369 | INFO | judger:349 | SaibloLocalJudger is shutting down
+2022-02-05 17:32:59,372 | INFO | judger:342 | SaibloLocalJudger is closed

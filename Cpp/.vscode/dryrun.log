@@ -1,0 +1,5 @@
+C:\Program Files (x86)\GnuWin32\bin\make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory `c:/Users/sheep/Desktop/SnakeGo/Cpp'
+g++ main.cpp -o main -O2 -I. -std=c++11 -lws2_32
+make: Leaving directory `c:/Users/sheep/Desktop/SnakeGo/Cpp'
+ 
