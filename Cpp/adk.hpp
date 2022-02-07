@@ -256,6 +256,7 @@ const Item NOT_A_ITEM { 0, 0, -1, 0, 0, 0, false, false };
 struct Coord
 {
 	int x, y;
+	Coord( int x, int y ) : x( x ), y( y ) {}
 };
 
 inline bool operator==( const Coord& lhs, const Coord& rhs ) { return ( lhs.x == rhs.x ) && ( lhs.y == rhs.y ); }

@@ -1,9 +1,201 @@
 #include "adk.hpp"
 #include <cmath>
 
+void bfs(const Context& ctx, int ret[16][16], int last[16][16], int dist[16][16])
+//ret是自己蛇的id，last存着这个位置的前驱，dist是距离
+{
+	static int dx[] = { 0, 1, 0, -1, 0 }, dy[] = { 0, 0, 1, 0, -1 };
+	std::queue<Coord> q;
+	for(int i = 0; i < 16; i++)
+		for(int j = 0; j < 16; j++)
+			ret[i][j] = -1;
+	for(int i = 0, len = ctx.my_snakes().size(); i < len; ++i)
+	{
+		Coord tmp = ctx.my_snakes()[i].coord_list[0];
+		ret[tmp.x][tmp.y] = i;
+		dist[tmp.x][tmp.y] = 0;
+		q.push(tmp);
+		for(int j = 0, len2 = ctx.my_snakes()[i].length(), len_bk = ctx.my_snakes()[i].length_bank; j < len2; ++j)
+		{
+			Coord tmp = ctx.my_snakes()[i].coord_list[j];
+			ret[tmp.x][tmp.y] = -1 -len2 +j -len_bk;
+		}
+	}
+	for(int i = 0, len = ctx.opponents_snakes().size(); i < len; ++i)
+		for(int j = 0, len2 = ctx.opponents_snakes()[i].coord_list.size(), len_bk = ctx.opponents_snakes()[i].length_bank; j < len2; ++j)
+		{
+			Coord tmp = ctx.opponents_snakes()[i].coord_list[j];
+			ret[tmp.x][tmp.y] = -1 -len2 +j -len_bk;
+			//todo : 这里我认为对方的蛇所在的位置是不能走的，但是可以考虑到对方的蛇在几回合之后还是否会占据那个格子
+			// -2 代表这里不能走
+		}
+	while(!q.empty())
+	{
+		Coord tmp = q.front();
+		q.pop();
+		for(int i = 1; i <= 4; ++i)
+		{
+			Coord next = tmp + Coord(dx[i], dy[i]);
+			if(next.x < 0 || next.x >= 16 || next.y < 0 || next.y >= 16)
+				continue;
+			else if ( ctx.wall_map()[next.x][next.y] != -1 )
+				continue;
+			else if(ret[next.x][next.y] == -2)
+			{
+				if(ret[next.x][next.y] + dist[tmp.x][tmp.y] + 1 >= 0)
+				{
+					ret[next.x][next.y] = ret[tmp.x][tmp.y];
+					dist[next.x][next.y] = dist[tmp.x][tmp.y] + 1;
+					last[next.x][next.y] = i;
+					q.push(next);
+				}
+				else
+					continue;
+			}
+			else if(ret[next.x][next.y] == -1)
+			{
+				ret[next.x][next.y] = ret[tmp.x][tmp.y];
+				dist[next.x][next.y] = dist[tmp.x][tmp.y] + 1;
+				last[next.x][next.y] = i;
+				q.push(next);
+			}
+		}
+	}
+}
+
+Operation OP[7] = {OP_RIGHT, OP_RIGHT, OP_UP, OP_LEFT, OP_DOWN, OP_RAILGUN, OP_SPLIT};
+Operation my_op[5];
+
+Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, const OpHistory& op_list )
+{
+	static int dx[] = { 0, 1, 0, -1, 0 }, dy[] = { 0, 0, 1, 0, -1 };
+	static int ret[16][16];
+	static int last[16][16];
+	static int dist[16][16];
+	static int cnt = 0;
+	static bool mark[5];
+	if ( snake_to_operate.id == ctx.my_snakes()[0].id )
+	{
+		cnt = 0;
+		for(int i = 0; i < 4; i++)
+			mark[i] = false;
+		bfs(ctx, ret, last, dist);
+		for ( int i = 0; i < ctx.item_list().size(); i++ )
+		{
+			//没有搜到合适的蛇
+			if( ret[ctx.item_list()[i].x][ctx.item_list()[i].y] < 0)
+				continue;
+
+			//搜到了合适的蛇，但已经有任务了
+			if(mark[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]])
+				continue;
+
+			//道具已经消失
+			if ( ctx.item_list()[i].time + ITEM_EXPIRE_LIMIT < ctx.current_round() )
+				continue;
+
+			//todo:这里的判断条件要改一下：我不一定要落在那16回合内
+			if ( ctx.item_list()[i].time <= ctx.current_round() + dist[ctx.item_list()[i].x][ctx.item_list()[i].y] &&
+				 ctx.item_list()[i].time + 16 > ctx.current_round() + dist[ctx.item_list()[i].x][ctx.item_list()[i].y] )
+			{
+				int dir = last[ctx.item_list()[i].x][ctx.item_list()[i].y];
+				Coord now = { ctx.item_list()[i].x, ctx.item_list()[i].y };
+				while(now != ctx.my_snakes()[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]].coord_list[0])
+				{
+					dir = last[now.x][now.y];
+					now = now - Coord(dx[dir], dy[dir]);
+				}
+				my_op[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] = OP[dir];
+				mark[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] = true;
+			}
+		}
+	}
+
+	if(mark[cnt])
+	{
+		++cnt;
+		return my_op[cnt-1];
+	}
+	else
+	{
+		++cnt;
+		//以上操作均未正常执行，则以如下优先顺序执行该蛇移动方向
+		//向空地方向移动>向固化方向移动>向右移动
+		int move[4] = { 0, 0, 0, 0 };
+		#pragma region
+		for ( int dir = 0; dir < 4; dir++ )
+		{
+			//蛇头到达位置
+			int t_x = snake_to_operate[0].x + dx[dir];
+			int t_y = snake_to_operate[0].y + dy[dir];
+
+			//超出边界
+			if ( t_x >= ctx.length() || t_x < 0 || t_y >= ctx.width() || t_y < 0 )
+			{
+				move[dir] = -1;
+				continue;
+			}
+
+			//撞墙
+			if ( ctx.wall_map()[t_x][t_y] != -1 )
+			{
+				move[dir] = -1;
+				continue;
+			}
+
+			//撞非本蛇
+			if ( ctx.snake_map()[t_x][t_y] != -1 && ctx.snake_map()[t_x][t_y] != snake_to_operate.id )
+			{
+				move[dir] = -1;
+				continue;
+			}
+
+			//回头撞自己
+			if ( ( snake_to_operate.length() > 2 ||
+				( snake_to_operate.length() == 2 && snake_to_operate.length_bank > 0 ) ) &&
+				snake_to_operate[1].x == t_x && snake_to_operate[1].y == t_y )
+			{
+				move[dir] = -1;
+				continue;
+			}
+
+			//移动导致固化
+			if ( ctx.snake_map()[t_x][t_y] == snake_to_operate.id )
+			{
+				move[dir] = 1;
+				continue;
+			}
+		}
+		for ( int dir = 0; dir < 4; dir++ )
+		{
+			if ( move[dir] == 0 )
+			{
+				return OP[dir+1];
+			}
+		}
+		for ( int dir = 0; dir < 4; dir++ )
+		{
+			if ( move[dir] == 1 )
+			{
+				return OP[dir+1];
+			}
+		}
+		#pragma endregion
+
+		if ( ( snake_to_operate.length() > 2 || ( snake_to_operate.length() == 2 && snake_to_operate.length_bank > 0 ) ) &&
+			snake_to_operate[1].x == snake_to_operate[0].x + dx[0] &&
+			snake_to_operate[1].y == snake_to_operate[0].y + dy[0] )
+			return OP_LEFT;
+		else
+			return OP_RIGHT;
+	}	
+}
+
 Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx, const OpHistory& op_list )
 {
+	return i_just_wanna_eat(snake_to_operate, ctx, op_list);
 	//若该蛇有道具，执行融化射线操作
+	//todo: 不要这么随意的使用道具
 	if ( snake_to_operate.railgun_item.id != -1 )
 	{
 		return OP_RAILGUN;

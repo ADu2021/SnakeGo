@@ -256,11 +256,20 @@ const Item NOT_A_ITEM { 0, 0, -1, 0, 0, 0, false, false };
 struct Coord
 {
 	int x, y;
+
+	Coord(int x, int y) : x(x), y(y) {}
 };
 
 inline bool operator==( const Coord& lhs, const Coord& rhs ) { return ( lhs.x == rhs.x ) && ( lhs.y == rhs.y ); }
 
 inline bool operator!=( const Coord& lhs, const Coord& rhs ) { return !( lhs == rhs ); }
+
+inline Coord operator + (const Coord &lhs, const Coord &rhs) { return { lhs.x + rhs.x, lhs.y + rhs.y }; }
+
+inline Coord operator - (const Coord &lhs, const Coord &rhs) { return { lhs.x - rhs.x, lhs.y - rhs.y }; }
+
+//*代表出租车距离
+inline int operator * (const Coord &lhs, const Coord &rhs) { return abs(lhs.x - rhs.x) + abs(lhs.y - rhs.y); }
 
 struct Snake
 {

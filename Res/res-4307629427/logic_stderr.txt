@@ -1,1 +1,0 @@
-ERROR:[Logic.main:186]: (<ErrorType.TLE: 1>, 0, 'timeOutError')
