@@ -8,7 +8,7 @@ C:\Program Files (x86)\GnuWin32\bin\make.exe all --print-data-base --no-builtin-
 # This program built for i386-pc-mingw32
  
 
-# Make data base, printed on Mon Feb 07 22:56:13 2022
+# Make data base, printed on Tue Feb 08 15:53:31 2022
 
 # ����
 
@@ -57,7 +57,7 @@ PROGRAMW6432 = C:\Program Files
 # ����
 PROGRAMDATA = C:\ProgramData
 # ����
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-90f62bd1-a21a-45ed-b5c0-719aaa953f51-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-5b8dc483-4778-4ae2-9da0-3c19e386e462-sock
 # ����
 VSCODE_CWD = C:\Users\sheep\AppData\Local\Programs\Microsoft VS Code
 # ����
@@ -69,8 +69,7 @@ ZES_ENABLE_SYSMAN = 1
 # ����
 PROCESSOR_ARCHITECTURE = x86
 # ����
-USERPROFILE = C:\Users\shee 
-p
+USERPROFILE = C:\Users\sheep
 # ����
 ALLUSERSPROFILE = C:\ProgramData
 # ����
@@ -84,7 +83,7 @@ ELECTRON_RUN_AS_NODE = 1
 # �Զ�
 %F = $(notdir $%)
 # ����
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_29728_SFGWCRCTIUFBGQOP
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14304_CEZVFSDVVHHDULVU
 # ����
 VSCODE_PIPE_LOGGING = true
 # ����
@@ -192,7 +191,7 @@ PROCESSOR_LEVEL = 6
 # ����
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # ����
-VSCODE_PID = 29728
+VSCODE_PID = 14304
 # ����
 USERDOMAIN_ROAMINGPROFILE = LAPTOP-L3M0Q453
 # variable set hash-table stats:
@@ -218,11 +217,11 @@ USERDOMAIN_ROAMINGPROFILE = LAPTOP-L3M0Q453
 # C:\Windows (�ؼ��� C:/Windows���޸�ʱ�� 1643638751)��134 �ļ��� �� impossibilities.
 # C:\Program Files (x86)\dotnet\ (�ؼ��� C:/Program Files (x86)/dotnet/���޸�ʱ�� 1642309965)��8 �ļ��� �� impossibilities.
 # c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\ (�ؼ��� c:/Program Files (x86)/Microsoft SQL Server/90/Tools/binn/���޸�ʱ�� 1631665464)��16 �ļ��� �� impossibilities.
-# C:\Users\sheep\AppData\Local\GitHubDesktop\bin (�ؼ��� C:/Users/sheep/AppData/Local/GitHubDesktop/bin���޸�ʱ�� 1641816258)��4 �ļ��� �� impossibilities.
+# C:\Users\sheep\AppData\Local\GitHubDesk 
+top\bin (�ؼ��� C:/Users/sheep/AppData/Local/GitHubDesktop/bin���޸�ʱ�� 1641816258)��4 �ļ��� �� impossibilities.
 # C:\Program Files\Git\cmd (�ؼ��� C:/Program Files/Git/cmd���޸�ʱ�� 1630832801)��8 �ļ��� �� impossibilities.
 # C:\Windows\system32 (�ؼ��� C:/Windows/system32���޸�ʱ�� 1643958815)��3042 �ļ��� �� impossibilities.
-# C:\Users\sheep\AppData\Local\Programs\Microsoft VS Code\bin (�ؼ��� C:/Users/sheep/AppData/Local/Programs/Microsoft VS Code/bin���޸�ʱ�� 1644025464)��4 �ļ��� �� impossibilities 
-.
+# C:\Users\sheep\AppData\Local\Programs\Microsoft VS Code\bin (�ؼ��� C:/Users/sheep/AppData/Local/Programs/Microsoft VS Code/bin���޸�ʱ�� 1644025464)��4 �ļ��� �� impossibilities.
 # C:\Program Files (x86)\GnuWin32\bin (�ؼ��� C:/Program Files (x86)/GnuWin32/bin���޸�ʱ�� 1642816427)��5 �ļ��� �� impossibilities.
 
 # 4551 �ļ��� �� impossibilities in 19 directories.
@@ -271,10 +270,7 @@ GNUmakefile:
 #  �ļ������ڡ�
 #  �ļ��Ѿ������¡�
 #  ����ʧ�ܡ�
-# vari 
-make: *** û�й�����Դ���Ŀ�ꡰall���� ֹͣ��
- 
-able set hash-table stats:
+# variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # files hash-table stats:
@@ -290,6 +286,8 @@ able set hash-table stats:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Mon Feb 07 22:56:13 2022
+# Finished Make data base on Tue Feb 08 15:53:31 2022
 
+ 
+make: *** û�й�����Դ���Ŀ�ꡰall���� ֹͣ��
  

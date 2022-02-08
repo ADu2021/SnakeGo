@@ -1,4 +1,4 @@
-C:\Program Files (x86)\GnuWin32\bin\make.exe --dry-run --keep-going --print-directory
+C:\Program Files (x86)\GnuWin32\bin\make.exe --dry-run --always-make --keep-going --print-directory
 make: Entering directory `c:/Users/sheep/Desktop/HiSnake'
 make: Leaving directory `c:/Users/sheep/Desktop/HiSnake'
  

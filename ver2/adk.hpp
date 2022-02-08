@@ -834,6 +834,7 @@ inline bool Context::round_preprocess()
 
 using OpHistory = std::vector<std::vector<Operation>>;
 
+Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, const OpHistory& op_history );
 Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx, const OpHistory& op_history );
 
 void game_over( int gameover_type, int winner, int p0_score, int p1_score );
@@ -885,7 +886,7 @@ inline SnakeGoAI::SnakeGoAI( int argc, char** argv ) : ch( nullptr ), ctx( nullp
 	{
 		if ( player == ctx->_current_player )
 		{
-			Operation op = make_your_decision( ctx->current_snake(), *ctx, op_history );
+			Operation op = i_just_wanna_eat( ctx->current_snake(), *ctx, op_history );
 			append_op( op );
 			ctx->do_operation( op );
 			char msg[] = { 0, 0, 0, 1, (char) op.type };
