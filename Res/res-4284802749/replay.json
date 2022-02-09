@@ -1,0 +1,2086 @@
+{
+  "game_config": { "length": 16, "width": 16, "max_round": 512, "random_seed": 1644391648825 },
+  "item_list": [
+    { "x": 6, "y": 6, "time": 6, "type": 0, "param": 1 },
+    { "x": 6, "y": 7, "time": 9, "type": 0, "param": 2 },
+    { "x": 9, "y": 9, "time": 14, "type": 0, "param": 5 },
+    { "x": 8, "y": 8, "time": 15, "type": 0, "param": 3 },
+    { "x": 8, "y": 6, "time": 16, "type": 0, "param": 4 },
+    { "x": 7, "y": 5, "time": 25, "type": 0, "param": 4 },
+    { "x": 9, "y": 10, "time": 26, "type": 0, "param": 2 },
+    { "x": 8, "y": 10, "time": 27, "type": 0, "param": 4 },
+    { "x": 5, "y": 6, "time": 33, "type": 2, "param": 512 },
+    { "x": 6, "y": 7, "time": 41, "type": 0, "param": 1 },
+    { "x": 5, "y": 7, "time": 42, "type": 0, "param": 3 },
+    { "x": 9, "y": 11, "time": 50, "type": 0, "param": 2 },
+    { "x": 8, "y": 9, "time": 53, "type": 0, "param": 5 },
+    { "x": 11, "y": 7, "time": 56, "type": 0, "param": 4 },
+    { "x": 6, "y": 9, "time": 57, "type": 2, "param": 512 },
+    { "x": 11, "y": 12, "time": 65, "type": 2, "param": 512 },
+    { "x": 4, "y": 3, "time": 67, "type": 2, "param": 512 },
+    { "x": 5, "y": 12, "time": 73, "type": 0, "param": 5 },
+    { "x": 7, "y": 10, "time": 80, "type": 0, "param": 4 },
+    { "x": 3, "y": 2, "time": 83, "type": 0, "param": 5 },
+    { "x": 11, "y": 11, "time": 88, "type": 2, "param": 512 },
+    { "x": 3, "y": 6, "time": 91, "type": 0, "param": 4 },
+    { "x": 12, "y": 2, "time": 92, "type": 0, "param": 3 },
+    { "x": 12, "y": 8, "time": 93, "type": 2, "param": 512 },
+    { "x": 13, "y": 12, "time": 96, "type": 2, "param": 512 },
+    { "x": 7, "y": 7, "time": 102, "type": 2, "param": 512 },
+    { "x": 4, "y": 2, "time": 104, "type": 0, "param": 5 },
+    { "x": 5, "y": 4, "time": 112, "type": 0, "param": 5 },
+    { "x": 8, "y": 8, "time": 113, "type": 0, "param": 3 },
+    { "x": 13, "y": 8, "time": 115, "type": 0, "param": 1 },
+    { "x": 3, "y": 4, "time": 117, "type": 0, "param": 2 },
+    { "x": 3, "y": 14, "time": 118, "type": 0, "param": 2 },
+    { "x": 13, "y": 2, "time": 122, "type": 0, "param": 3 },
+    { "x": 10, "y": 2, "time": 127, "type": 0, "param": 4 },
+    { "x": 4, "y": 10, "time": 129, "type": 0, "param": 1 },
+    { "x": 8, "y": 1, "time": 132, "type": 0, "param": 3 },
+    { "x": 0, "y": 9, "time": 135, "type": 0, "param": 1 },
+    { "x": 11, "y": 10, "time": 141, "type": 2, "param": 512 },
+    { "x": 12, "y": 4, "time": 144, "type": 0, "param": 1 },
+    { "x": 4, "y": 6, "time": 149, "type": 0, "param": 2 },
+    { "x": 0, "y": 7, "time": 151, "type": 0, "param": 4 },
+    { "x": 15, "y": 10, "time": 152, "type": 0, "param": 3 },
+    { "x": 12, "y": 0, "time": 154, "type": 0, "param": 3 },
+    { "x": 11, "y": 5, "time": 156, "type": 0, "param": 3 },
+    { "x": 6, "y": 7, "time": 158, "type": 0, "param": 4 },
+    { "x": 5, "y": 5, "time": 160, "type": 2, "param": 512 },
+    { "x": 7, "y": 9, "time": 167, "type": 0, "param": 1 },
+    { "x": 1, "y": 15, "time": 170, "type": 0, "param": 1 },
+    { "x": 10, "y": 2, "time": 171, "type": 2, "param": 512 },
+    { "x": 0, "y": 5, "time": 173, "type": 2, "param": 512 },
+    { "x": 13, "y": 7, "time": 174, "type": 0, "param": 5 },
+    { "x": 11, "y": 10, "time": 177, "type": 0, "param": 5 },
+    { "x": 4, "y": 9, "time": 180, "type": 0, "param": 5 },
+    { "x": 8, "y": 11, "time": 181, "type": 0, "param": 4 },
+    { "x": 4, "y": 15, "time": 183, "type": 2, "param": 512 },
+    { "x": 3, "y": 6, "time": 184, "type": 2, "param": 512 },
+    { "x": 13, "y": 15, "time": 185, "type": 0, "param": 1 },
+    { "x": 7, "y": 5, "time": 186, "type": 0, "param": 3 },
+    { "x": 12, "y": 6, "time": 187, "type": 0, "param": 1 },
+    { "x": 10, "y": 4, "time": 201, "type": 0, "param": 3 },
+    { "x": 2, "y": 8, "time": 206, "type": 0, "param": 4 },
+    { "x": 9, "y": 9, "time": 210, "type": 0, "param": 1 },
+    { "x": 12, "y": 15, "time": 211, "type": 2, "param": 512 },
+    { "x": 1, "y": 10, "time": 212, "type": 2, "param": 512 },
+    { "x": 4, "y": 8, "time": 221, "type": 0, "param": 2 },
+    { "x": 14, "y": 11, "time": 222, "type": 2, "param": 512 },
+    { "x": 2, "y": 14, "time": 223, "type": 0, "param": 1 },
+    { "x": 13, "y": 12, "time": 226, "type": 0, "param": 2 },
+    { "x": 0, "y": 11, "time": 230, "type": 0, "param": 4 },
+    { "x": 12, "y": 12, "time": 231, "type": 0, "param": 5 },
+    { "x": 2, "y": 15, "time": 240, "type": 0, "param": 4 },
+    { "x": 15, "y": 5, "time": 243, "type": 0, "param": 4 },
+    { "x": 9, "y": 0, "time": 245, "type": 0, "param": 3 },
+    { "x": 14, "y": 2, "time": 262, "type": 2, "param": 512 },
+    { "x": 4, "y": 10, "time": 268, "type": 2, "param": 512 },
+    { "x": 9, "y": 5, "time": 269, "type": 0, "param": 1 },
+    { "x": 1, "y": 2, "time": 270, "type": 0, "param": 2 },
+    { "x": 6, "y": 5, "time": 273, "type": 0, "param": 4 },
+    { "x": 4, "y": 5, "time": 274, "type": 0, "param": 1 },
+    { "x": 10, "y": 11, "time": 282, "type": 2, "param": 512 },
+    { "x": 14, "y": 6, "time": 286, "type": 0, "param": 5 },
+    { "x": 8, "y": 5, "time": 287, "type": 2, "param": 512 },
+    { "x": 10, "y": 7, "time": 292, "type": 2, "param": 512 },
+    { "x": 4, "y": 7, "time": 293, "type": 0, "param": 5 },
+    { "x": 6, "y": 9, "time": 296, "type": 0, "param": 2 },
+    { "x": 2, "y": 7, "time": 300, "type": 0, "param": 1 },
+    { "x": 10, "y": 8, "time": 301, "type": 0, "param": 2 },
+    { "x": 7, "y": 12, "time": 306, "type": 0, "param": 4 },
+    { "x": 11, "y": 0, "time": 308, "type": 0, "param": 1 },
+    { "x": 8, "y": 7, "time": 309, "type": 0, "param": 5 },
+    { "x": 14, "y": 13, "time": 310, "type": 0, "param": 1 },
+    { "x": 11, "y": 10, "time": 313, "type": 0, "param": 4 },
+    { "x": 8, "y": 14, "time": 314, "type": 2, "param": 512 },
+    { "x": 2, "y": 10, "time": 315, "type": 2, "param": 512 },
+    { "x": 0, "y": 1, "time": 321, "type": 2, "param": 512 },
+    { "x": 3, "y": 0, "time": 326, "type": 0, "param": 5 },
+    { "x": 2, "y": 7, "time": 329, "type": 0, "param": 5 },
+    { "x": 0, "y": 0, "time": 332, "type": 0, "param": 5 },
+    { "x": 1, "y": 10, "time": 336, "type": 0, "param": 1 },
+    { "x": 11, "y": 13, "time": 339, "type": 0, "param": 2 },
+    { "x": 9, "y": 0, "time": 341, "type": 0, "param": 5 },
+    { "x": 11, "y": 7, "time": 342, "type": 2, "param": 512 },
+    { "x": 11, "y": 5, "time": 349, "type": 2, "param": 512 },
+    { "x": 14, "y": 6, "time": 350, "type": 0, "param": 1 },
+    { "x": 12, "y": 10, "time": 351, "type": 0, "param": 5 },
+    { "x": 7, "y": 11, "time": 358, "type": 0, "param": 1 },
+    { "x": 1, "y": 15, "time": 359, "type": 0, "param": 5 },
+    { "x": 3, "y": 5, "time": 367, "type": 0, "param": 4 },
+    { "x": 2, "y": 15, "time": 368, "type": 0, "param": 3 },
+    { "x": 12, "y": 13, "time": 384, "type": 0, "param": 4 },
+    { "x": 15, "y": 13, "time": 386, "type": 2, "param": 512 },
+    { "x": 4, "y": 7, "time": 388, "type": 2, "param": 512 },
+    { "x": 5, "y": 10, "time": 396, "type": 2, "param": 512 },
+    { "x": 14, "y": 15, "time": 398, "type": 2, "param": 512 },
+    { "x": 7, "y": 9, "time": 400, "type": 0, "param": 4 },
+    { "x": 6, "y": 14, "time": 402, "type": 0, "param": 5 },
+    { "x": 1, "y": 3, "time": 404, "type": 2, "param": 512 },
+    { "x": 13, "y": 12, "time": 409, "type": 2, "param": 512 },
+    { "x": 1, "y": 6, "time": 419, "type": 0, "param": 1 },
+    { "x": 7, "y": 10, "time": 430, "type": 2, "param": 512 },
+    { "x": 10, "y": 14, "time": 431, "type": 0, "param": 2 },
+    { "x": 13, "y": 4, "time": 432, "type": 0, "param": 4 },
+    { "x": 5, "y": 6, "time": 437, "type": 0, "param": 1 },
+    { "x": 2, "y": 14, "time": 446, "type": 2, "param": 512 },
+    { "x": 8, "y": 8, "time": 448, "type": 0, "param": 2 },
+    { "x": 13, "y": 13, "time": 449, "type": 2, "param": 512 },
+    { "x": 0, "y": 11, "time": 451, "type": 2, "param": 512 },
+    { "x": 14, "y": 0, "time": 452, "type": 0, "param": 5 },
+    { "x": 4, "y": 4, "time": 456, "type": 2, "param": 512 },
+    { "x": 12, "y": 3, "time": 457, "type": 2, "param": 512 },
+    { "x": 11, "y": 10, "time": 460, "type": 0, "param": 3 },
+    { "x": 3, "y": 14, "time": 461, "type": 2, "param": 512 },
+    { "x": 7, "y": 0, "time": 466, "type": 2, "param": 512 },
+    { "x": 9, "y": 6, "time": 478, "type": 0, "param": 5 },
+    { "x": 13, "y": 6, "time": 479, "type": 2, "param": 512 },
+    { "x": 13, "y": 10, "time": 480, "type": 2, "param": 512 },
+    { "x": 6, "y": 7, "time": 482, "type": 0, "param": 4 },
+    { "x": 0, "y": 10, "time": 483, "type": 2, "param": 512 },
+    { "x": 10, "y": 11, "time": 484, "type": 0, "param": 2 },
+    { "x": 5, "y": 11, "time": 485, "type": 2, "param": 512 },
+    { "x": 12, "y": 13, "time": 488, "type": 0, "param": 3 },
+    { "x": 9, "y": 2, "time": 492, "type": 2, "param": 512 },
+    { "x": 14, "y": 6, "time": 502, "type": 2, "param": 512 },
+    { "x": 3, "y": 11, "time": 506, "type": 0, "param": 1 },
+    { "x": 3, "y": 0, "time": 507, "type": 0, "param": 2 },
+    { "x": 10, "y": 1, "time": 509, "type": 0, "param": 3 }
+  ],
+  "round_info": [
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [
+        { "item": 4, "snake": 1 }
+      ], "expired_item": [], "invalid_item": [], "extra_length": [
+        { "snake": 1, "el": 5 }
+      ] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [
+        { "item": 1, "snake": -1 }
+      ], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [
+        { "item": 2, "snake": -1 }
+      ], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [
+        { "item": 3, "snake": -1 }
+      ], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [
+        { "item": 8, "snake": 1 }
+      ], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [
+        { "item": 6, "snake": -1 }
+      ], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [
+        { "item": 9, "snake": -1 }
+      ], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [
+        { "item": 12, "snake": -1 }
+      ], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [
+        { "item": 13, "snake": -1 }
+      ], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [
+        { "item": 14, "snake": -1 }
+      ], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [
+        { "item": 16, "snake": -1 }
+      ], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [
+        { "item": 18, "snake": -1 }
+      ], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [], "expired_item": [], "invalid_item": [], "extra_length": [] },
+    { "gotten_item": [
+        { "item": 26, "snake": 0 }
+      ], "expired_item": [
+        { "item": 20, "snake": -1 }
+      ], "invalid_item": [], "extra_length": [
+        { "snake": 0, "el": 5 }
+      ] }
+  ],
+  "operations": [
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": 0,
+        "extra_length": 1,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 4,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 3,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 2,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 1,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": 5,
+        "extra_length": 4,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 3,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 2,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 1,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": 7,
+        "extra_length": 4,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 3,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 2,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 1,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": 10,
+        "extra_length": 3,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 2,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 1, "direction": 3, "item_id": -1 },
+        "dead_snake": [1],
+        "should_solid": true,
+        "extra_solid_area": [
+          { "x": 5, "y": 5 },
+          { "x": 5, "y": 6 },
+          { "x": 5, "y": 7 },
+          { "x": 5, "y": 8 },
+          { "x": 5, "y": 9 },
+          { "x": 5, "y": 10 },
+          { "x": 5, "y": 11 },
+          { "x": 5, "y": 12 },
+          { "x": 6, "y": 5 },
+          { "x": 6, "y": 6 },
+          { "x": 6, "y": 7 },
+          { "x": 6, "y": 8 },
+          { "x": 6, "y": 9 },
+          { "x": 6, "y": 10 },
+          { "x": 6, "y": 11 },
+          { "x": 6, "y": 12 },
+          { "x": 7, "y": 5 },
+          { "x": 7, "y": 6 },
+          { "x": 7, "y": 7 },
+          { "x": 7, "y": 8 },
+          { "x": 7, "y": 9 },
+          { "x": 7, "y": 10 },
+          { "x": 7, "y": 11 },
+          { "x": 7, "y": 12 },
+          { "x": 8, "y": 5 },
+          { "x": 8, "y": 6 },
+          { "x": 8, "y": 7 },
+          { "x": 8, "y": 8 },
+          { "x": 8, "y": 9 },
+          { "x": 8, "y": 10 },
+          { "x": 8, "y": 11 },
+          { "x": 8, "y": 12 }
+        ],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": 11,
+        "extra_length": 2,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 1,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": 15,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 2, "snake": 0, "direction": -1, "item_id": 15 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 3, "snake": 0, "direction": -1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": 2
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      },
+      {
+        "basic": { "type": 1, "snake": 2, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      },
+      {
+        "basic": { "type": 1, "snake": 2, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      },
+      {
+        "basic": { "type": 1, "snake": 2, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      },
+      {
+        "basic": { "type": 1, "snake": 2, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      },
+      {
+        "basic": { "type": 1, "snake": 2, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": 17,
+        "extra_length": 5,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      },
+      {
+        "basic": { "type": 1, "snake": 2, "direction": 3, "item_id": -1 },
+        "dead_snake": [2],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": 21,
+        "extra_length": 4,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 3,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 2,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 1,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": 19,
+        "extra_length": 5,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 3, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 4,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 3,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 2,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 0, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 1,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 1, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [],
+        "should_solid": false,
+        "extra_solid_area": [],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    [],
+    [
+      {
+        "basic": { "type": 1, "snake": 0, "direction": 2, "item_id": -1 },
+        "dead_snake": [0],
+        "should_solid": true,
+        "extra_solid_area": [
+          { "x": 3, "y": 1 },
+          { "x": 3, "y": 2 },
+          { "x": 4, "y": 1 },
+          { "x": 4, "y": 2 },
+          { "x": 5, "y": 1 },
+          { "x": 5, "y": 2 },
+          { "x": 6, "y": 1 },
+          { "x": 6, "y": 2 }
+        ],
+        "got_item": -1,
+        "extra_length": 0,
+        "new_snake_id": -1
+      }
+    ],
+    []
+  ],
+  "end_info": { "type": "NORMAL", "winner": 1, "score": [8, 28], "err": null }
+}

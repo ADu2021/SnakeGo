@@ -291,6 +291,10 @@ struct Operation
 	int type;
 };
 
+inline bool operator==( const Operation& lhs, const Operation& rhs ) { return lhs.type == rhs.type; }
+
+inline bool operator!=( const Operation& lhs, const Operation& rhs ) { return lhs.type != rhs.type; }
+
 const Operation OP_RIGHT { 1 };
 const Operation OP_UP { 2 };
 const Operation OP_LEFT { 3 };
@@ -1000,3 +1004,13 @@ inline void SnakeGoAI::handle_gameover()
 inline void SnakeGoAI::crash() { ::exit( -1 ); }
 
 /*   AI Controller Ends   */
+
+/* My functions */
+
+bool is_valid_operation( const Operation& op, const Context& ctx, const Snake& snake_to_operate );
+
+void bfs(const Context& ctx, int ret[16][16], int last[16][16], int dist[16][16]);
+
+void bfs_bysnake(const Context& ctx, const Snake& snake, int ret[16][16], int last[16][16], int dist[16][16]);
+
+/* My Functions Ends */
