@@ -269,7 +269,13 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 
 				int dir = last[ctx.item_list()[i].x][ctx.item_list()[i].y];
 				Coord now = { ctx.item_list()[i].x, ctx.item_list()[i].y };
+
+				//刚好在头上，不管
+				if(now == ctx.my_snakes()[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]].coord_list[0])
+					continue;
+
 				fprintf(stderr,"route:\n");
+
 				while(now != ctx.my_snakes()[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]].coord_list[0])
 				{
 					fprintf(stderr, "%d %d\n", now.x, now.y);
@@ -286,13 +292,13 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 
 	if(mark[cnt])
 	{
-		fprintf(stderr,"by 	\n");
+		fprintf(stderr,"by bfs\n\n");
 		++cnt;
 		return my_op[cnt-1];
 	}
 	else
 	{
-		fprintf(stderr,"by default\n");
+		fprintf(stderr,"by default\n\n");
 		++cnt;
 		return make_your_decision(snake_to_operate, ctx, op_list);
 	}
