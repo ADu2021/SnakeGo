@@ -8,7 +8,7 @@ C:\Program Files (x86)\GnuWin32\bin\make.exe all --print-data-base --no-builtin-
 # This program built for i386-pc-mingw32
  
 
-# Make data base, printed on Thu Feb 10 09:48:07 2022
+# Make data base, printed on Fri Feb 11 00:16:16 2022
 
 # ����
 
@@ -57,7 +57,7 @@ PROGRAMW6432 = C:\Program Files
 # ����
 PROGRAMDATA = C:\ProgramData
 # ����
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-66b8b3f5-5259-4825-9c70-e37958de3611-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-9d27411e-1c03-4a91-86fc-07ab1de66032-sock
 # ����
 VSCODE_CWD = C:\Users\sheep\AppData\Local\Programs\Microsoft VS Code
 # ����
@@ -69,8 +69,7 @@ ZES_ENABLE_SYSMAN = 1
 # ����
 PROCESSOR_ARCHITECTURE = x86
 # ����
-USERPROFILE = C:\Users\shee 
-p
+USERPROFILE = C:\Users\sheep
 # ����
 ALLUSERSPROFILE = C:\ProgramData
 # ����
@@ -84,7 +83,7 @@ ELECTRON_RUN_AS_NODE = 1
 # �Զ�
 %F = $(notdir $%)
 # ����
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7524_DGCUCQQAJNJIZCNZ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_3148_XAUVIBWMVWAQBRJV
 # ����
 VSCODE_PIPE_LOGGING = true
 # ����
@@ -190,9 +189,10 @@ LANG = C
 # ����
 PROCESSOR_LEVEL = 6
 # ����
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+FPS_BROWSER_APP_PROFILE_STRING  
+= Internet Explorer
 # ����
-VSCODE_PID = 7524
+VSCODE_PID = 3148
 # ����
 USERDOMAIN_ROAMINGPROFILE = LAPTOP-L3M0Q453
 # variable set hash-table stats:
@@ -222,7 +222,6 @@ USERDOMAIN_ROAMINGPROFILE = LAPTOP-L3M0Q453
 # C:\Program Files\Git\cmd (�ؼ��� C:/Program Files/Git/cmd���޸�ʱ�� 1630832801)��8 �ļ��� �� impossibilities.
 # C:\Windows\system32 (�ؼ��� C:/Windows/system32���޸�ʱ�� 1644457557)��3042 �ļ��� �� impossibilities.
 # C:\Users\sheep\AppData\Local\Programs\Microsoft VS Code\bin (�ؼ��� C:/Users/sheep/AppData/Local/Programs/Microsoft VS Code/bin���޸�ʱ�� 1644388364)��4 �ļ��� �� impossibilities.
- 
 # C:\Program Files (x86)\GnuWin32\bin (�ؼ��� C:/Program Files (x86)/GnuWin32/bin���޸�ʱ�� 1642816427)��5 �ļ��� �� impossibilities.
 
 # 4551 �ļ��� �� impossibilities in 19 directories.
@@ -271,10 +270,7 @@ GNUmakefile:
 #  �ļ������ڡ�
 #  �ļ��Ѿ������¡�
 #  ����ʧ�ܡ�
-# variab 
-make: *** û�й�����Դ���Ŀ�ꡰall���� ֹͣ��
- 
-le set hash-table stats:
+# variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # files hash-table stats:
@@ -290,6 +286,8 @@ le set hash-table stats:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Thu Feb 10 09:48:07 2022
+# Finished Make data base on Fri Feb 11 00:16:16 2022
 
+ 
+make: *** û�й�����Դ���Ŀ�ꡰall���� ֹͣ��
  

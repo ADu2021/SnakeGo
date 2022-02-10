@@ -1009,8 +1009,16 @@ inline void SnakeGoAI::crash() { ::exit( -1 ); }
 
 bool is_valid_operation( const Operation& op, const Context& ctx, const Snake& snake_to_operate );
 
+bool is_dead_end(const Context& ctx, int block[16][16], Coord src, Coord dst);
+
 void bfs(const Context& ctx, int ret[16][16], int last[16][16], int dist[16][16]);
 
 void bfs_bysnake(const Context& ctx, const Snake& snake, int ret[16][16], int last[16][16], int dist[16][16]);
+
+bool in_zone(const Coord& coord); // 合法点
+
+int seal_expect(const Snake& snake);
+int seal_count(int snake_map[16][16]);
+
 
 /* My Functions Ends */

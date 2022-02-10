@@ -3,6 +3,8 @@
 
 #define fprintf //
 
+const int MIN_DST_SIZE = 50;
+
 bool is_valid_operation( const Operation& op, const Context& ctx, const Snake& snake_to_operate )
 {
 	static int dx[] = { 0, 1, 0, -1, 0 }, dy[] = { 0, 0, 1, 0, -1 };
@@ -226,6 +228,87 @@ void bfs_bysnake(const Context& ctx, const Snake& snake, int ret[16][16], int la
 	}
 }
 
+bool is_dead_end(const Context& ctx, int block[16][16], Coord src, Coord dst)
+// block是不让走的路线，通常是已经走过的path
+{
+	static int dx[] = { 0, 1, 0, -1, 0 }, dy[] = { 0, 0, 1, 0, -1 };
+	for(int i = 0; i < 16; i++)
+		for(int j = 0; j < 16; j++)
+			if(ctx.snake_map()[i][j] != -1) // todo:蛇可能移动
+				block[i][j] = 1;
+	for(int i = 0; i < 16; i++)
+		for(int j = 0; j < 16; j++)
+			if(ctx.wall_map()[i][j] != -1) // TODO:墙可能被融化 可能其它蛇来救一下
+				block[i][j] = 1;
+	
+	bool vis[16][16];
+	for(int i = 0; i < 16; i++)
+		for(int j = 0; j < 16; j++)
+			vis[i][j] = false;
+	std::queue<Coord> q;
+	q.push(dst);
+	vis[dst.x][dst.y] = true;
+
+	int src_size = 1;
+	int dst_size = 1;
+
+	while(!q.empty())
+	{
+		Coord tmp = q.front();
+		q.pop();
+		if(tmp == src)
+			break;
+		for(int i = 1; i <= 4; i++)
+		{
+			Coord next = tmp + Coord(dx[i], dy[i]);
+			if(!in_zone(next))
+				continue;
+			if(block[next.x][next.y] == 1)
+				continue;
+			if(!vis[next.x][next.y])
+			{
+				q.push(next);
+				vis[next.x][next.y] = true;
+				++dst_size;
+			}
+		}
+	}
+
+	if(vis[src.x][src.y])
+		return false;
+
+	for(int i = 0; i < 16; i++)
+		for(int j = 0; j < 16; j++)
+			vis[i][j] = false;
+	q.push(src);
+	vis[src.x][src.y] = true;
+	while(!q.empty())
+	{
+		Coord tmp = q.front();
+		q.pop();
+		if(tmp == dst)
+			break;
+		for(int i = 1; i <= 4; i++)
+		{
+			Coord next = tmp + Coord(dx[i], dy[i]);
+			if(!in_zone(next))
+				continue;
+			if(block[next.x][next.y] == 1)
+				continue;
+			if(!vis[next.x][next.y])
+			{
+				q.push(next);
+				vis[next.x][next.y] = true;
+				++src_size;
+			}
+		}
+	}
+
+	if(src_size > dst_size && dst_size < MIN_DST_SIZE) // todo : adjust MIN_DST_SIZE
+		return true;
+	return false;
+}
+
 Operation OP[7] = {OP_RIGHT, OP_RIGHT, OP_UP, OP_LEFT, OP_DOWN, OP_RAILGUN, OP_SPLIT};
 Operation my_op[5];
 int my_op_dist[5];
@@ -237,7 +320,7 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 	static int last[16][16];
 	static int dist[16][16];
 	static int cnt = 0;
-	static int mark[5]; // 0 = no_task # 1 = eat
+	static int mark[5]; // 0 = no_task # 1 = eat # 5 = railgun
 	
 
 	if ( snake_to_operate.id == ctx.my_snakes()[0].id )
@@ -276,6 +359,9 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 				if(now == ctx.my_snakes()[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]].coord_list[0])
 					continue;
 
+				int block[16][16];
+				for(int i = 0; i < 16; i++) for(int j = 0; j < 16; j++) block[i][j] = 0;
+
 				fprintf(stderr,"route:\n");
 
 				while(now != ctx.my_snakes()[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]].coord_list[0])
@@ -283,13 +369,44 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 					fprintf(stderr, "%d %d\n", now.x, now.y);
 					dir = last[now.x][now.y];
 					now = now - Coord(dx[dir], dy[dir]);
+					block[now.x][now.y] = 1;
 				}
+
+				//避免食物陷阱
+				if(is_dead_end(ctx,block,ctx.my_snakes()[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]].coord_list[0],{ctx.item_list()[i].x, ctx.item_list()[i].y}))
+					continue;
 				
 				my_op[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] = OP[dir];
 				mark[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] = 1;
 				my_op_dist[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] = dist[ctx.item_list()[i].x][ctx.item_list()[i].y];
 			}
 		}
+
+		//没有eat 任务的蛇
+		for(int i = 0; i < ctx.my_snakes().size(); i++)
+		{
+			if(mark[i])
+				continue;
+			//RAILGUN
+			if( ( ctx.my_snakes()[i].railgun_item.id >= 0 ) && ( ctx.my_snakes()[i].length() >= 2 ) )
+			{
+				Coord diff = ctx.my_snakes()[i][0] - ctx.my_snakes()[i][1];
+				int wall_count = 0;
+				for(Coord j = ctx.my_snakes()[i][0] + diff; in_zone(j); j = j + diff)
+				{
+					if(ctx.wall_map()[j.x][j.y] == ctx.current_player())
+						wall_count--;
+					else if(ctx.wall_map()[j.x][j.y] == (1 - ctx.current_player()))
+						wall_count++;
+				}
+				if(wall_count > 0)
+				{
+					my_op[i] = OP_RAILGUN;
+					mark[i] = 5;
+				}
+			}
+		}
+
 	}
 
 	if(mark[cnt])
@@ -308,15 +425,8 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 
 Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx, const OpHistory& op_list )
 {
-	//若该蛇有道具，执行融化射线操作
-	//todo: 不要这么随意的使用道具
-	if ( snake_to_operate.railgun_item.id != -1 )
-	{
-		return OP_RAILGUN;
-	}
-
 	//若为该玩家操控的首条蛇且长度超过10且蛇数少于4则分裂
-	if ( snake_to_operate == ctx.my_snakes()[0] )
+	/*if ( snake_to_operate == ctx.my_snakes()[0] )
 	{
 		//若该蛇长度超过10
 		if ( snake_to_operate.length() >= 10 )
@@ -326,6 +436,7 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 				return OP_SPLIT;
 		}
 	}
+	*/
 
 	Operation direction[4] = { OP_RIGHT, OP_UP, OP_LEFT, OP_DOWN };
 
@@ -334,6 +445,8 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 	//确定合法移动方向
 	//-1代表移动非法，0代表正常移动，1代表移动触发固化
 	int move[4] = { 0, 0, 0, 0 };
+	double seal_gain[4] = { 0, 0, 0, 0 };
+	double max_seal_gain = 0; int max_seal_gain_dir = -1;
 	for ( int dir = 0; dir < 4; dir++ )
 	{
 		//蛇头到达位置
@@ -374,11 +487,36 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 		if ( ctx.snake_map()[t_x][t_y] == snake_to_operate.id )
 		{
 			move[dir] = 1;
+			//计算收益
+			int snake_map[16][16];
+			for(int i = 0; i < 16; i++)	for(int j = 0; j < 16; j++)	snake_map[i][j] = 0;
+			for(int i = 0; i < snake_to_operate.length(); i++)
+			{
+				snake_map[snake_to_operate[i].x][snake_to_operate[i].y] = 1;
+				if(snake_to_operate[i] == Coord{t_x,t_y})
+					break;
+			}
+			seal_gain[dir] = seal_count(snake_map) / (double)seal_expect(snake_to_operate);
+			if(max_seal_gain_dir == -1 || seal_gain[dir] > max_seal_gain)
+			{
+				max_seal_gain = seal_gain[dir];
+				max_seal_gain_dir = dir;
+			}
 			continue;
 		}
 	}
+
+	//尝试固化
+	if(ctx.my_snakes().size() >= 3 && max_seal_gain >= 0.8)
+		return direction[max_seal_gain_dir];
+
+	//尝试分裂
+	if(ctx.my_snakes().size() < 4 && snake_to_operate.length() >= 10)
+		return OP_SPLIT;
+
+	/*
 	//玩家操控的首条蛇朝向道具移动
-	if ( snake_to_operate == ctx.my_snakes()[0] )
+	//if ( snake_to_operate == ctx.my_snakes()[0] )
 	{
 		for ( int i = 0; i < ctx.item_list().size(); i++ )
 		{
@@ -412,9 +550,10 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 			}
 		}
 	}
+	*/
 
 	//其他蛇优先固化，或朝向蛇尾方向移动
-	else
+	//else
 	{
 		//计算蛇头与蛇尾的距离
 		int distance = abs( snake_to_operate.coord_list.back().x - snake_to_operate.coord_list[0].x ) +
@@ -425,10 +564,12 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 			if ( move[dir] == -1 )
 				continue;
 
+			/*
 			if ( move[dir] == 1 )
 			{
 				return direction[dir];
 			}
+			*/
 
 			//朝向蛇尾方向移动
 			int t_x = snake_to_operate.coord_list[0].x + dx[dir];
@@ -443,7 +584,7 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 	}
 
 	//以上操作均未正常执行，则以如下优先顺序执行该蛇移动方向
-	//向空地方向移动>向固化方向移动>向右移动
+	//向空地方向移动>分裂>向固化方向移动>向右移动
 	for ( int dir = 0; dir < 4; dir++ )
 	{
 		if ( move[dir] == 0 )
@@ -451,13 +592,10 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 			return direction[dir];
 		}
 	}
-	for ( int dir = 0; dir < 4; dir++ )
-	{
-		if ( move[dir] == 1 )
-		{
-			return direction[dir];
-		}
-	}
+	if(ctx.my_snakes().size() < 4)
+		return OP_SPLIT;
+	if(max_seal_gain_dir != -1)
+		return direction[max_seal_gain_dir];
 	if ( ( snake_to_operate.length() > 2 || ( snake_to_operate.length() == 2 && snake_to_operate.length_bank > 0 ) ) &&
 		 snake_to_operate[1].x == snake_to_operate[0].x + dx[0] &&
 		 snake_to_operate[1].y == snake_to_operate[0].y + dy[0] )
@@ -465,6 +603,138 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 	else
 		return OP_RIGHT;
 }
+
+bool in_zone(const Coord& coord)
+{
+	if(coord.x < 0 || coord.x >= 16 || coord.y < 0 || coord.y >= 16)
+		return false;
+	return true;
+}
+
+int seal_expect(const Snake& snake)
+{
+	int tar_x = (snake.length() >> 2);
+	int tar_y = (snake.length() >> 1) - tar_x;
+	return tar_x * tar_y;
+}
+
+int seal_square(const Context& ctx, const Snake& snake)		// 0:Impossible		1:Safe
+// not completed
+{
+	int tar_x = (snake.length() >> 2);
+	int tar_y = (snake.length() >> 1) - tar_x;
+
+	bool mark = true;
+	if(in_zone(snake[0] + Coord{tar_x, tar_y}))
+	{
+		for(int i = snake[0].x; i < snake[0].x + tar_x; i++)
+		{
+			if(ctx.wall_map()[i][snake[0].y] != -1 || ctx.snake_map()[i][snake[0].y] != -1)
+			{
+				if(i == snake[0].x)
+					continue;
+				mark = false;
+				break;
+			}
+			if(ctx.wall_map()[i][snake[0].y + tar_y] != -1 || ctx.snake_map()[i][snake[0].y + tar_y] != -1)
+			{
+				mark = false;
+				break;
+			}
+		}
+		for(int j = snake[0].y; j < snake[0].y + tar_y; j++)
+		{
+			if(ctx.wall_map()[snake[0].x][j] != -1 || ctx.snake_map()[snake[0].x][j] != -1)
+			{
+				if(j == snake[0].y)
+					continue;
+				mark = false;
+				break;
+			}
+			if(ctx.wall_map()[snake[0].x + tar_x][j] != -1 || ctx.snake_map()[snake[0].x + tar_x][j] != -1)
+			{
+				mark = false;
+				break;
+			}
+		}
+	}
+	if(mark)
+		return 1;
+	else
+		return 0;
+	return 0;
+}
+
+int seal_tri(const Context& ctx, const Snake& snake)
+{
+	return 0;
+}
+
+int seal_count(int snake_map[16][16])
+{
+	static int dx[] = { 0, 1, 0, -1, 0 }, dy[] = { 0, 0, 1, 0, -1 };
+
+	std::queue<Coord> q;
+	for(int i = 0; i < 16; i++)
+	{
+		if(!q.empty())
+			break;
+		if(snake_map[i][0] == 0)
+		{
+			q.push(Coord{i, 0});
+			snake_map[i][0] = 2;
+		}
+		if(!q.empty())
+			break;
+		if(snake_map[i][15] == 0)
+		{
+			q.push(Coord{i, 0});
+			snake_map[i][0] = 2;
+		}
+	}
+	for(int j = 0; j < 16; j++)
+	{
+		if(!q.empty())
+			break;
+		if(snake_map[0][j] == 0)
+		{
+			q.push(Coord{0, j});
+			snake_map[0][j] = 2;
+		}
+		if(!q.empty())
+			break;
+		if(snake_map[15][j] == 0)
+		{
+			q.push(Coord{0, j});
+			snake_map[0][j] = 2;
+		}
+	}
+	while(!q.empty())
+	{
+		Coord cur = q.front();
+		q.pop();
+		for(int i = 1; i <= 4; i++)
+		{
+			Coord next = cur + Coord{dx[i], dy[i]};
+			if(in_zone(next) && snake_map[next.x][next.y] == 0)
+			{
+				q.push(next);
+				snake_map[next.x][next.y] = 2;
+			}
+		}
+	}
+	int ret = 0;
+	for(int i = 0; i < 16; i++)
+	{
+		for(int j = 0; j < 16; j++)
+		{
+			if(snake_map[i][j] != 2)
+				ret++;
+		}
+	}
+	return ret;
+}
+
 
 void game_over( int gameover_type, int winner, int p0_score, int p1_score )
 {
