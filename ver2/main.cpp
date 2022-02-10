@@ -1,6 +1,8 @@
 #include "adk.hpp"
 #include <cmath>
 
+#define fprintf //
+
 bool is_valid_operation( const Operation& op, const Context& ctx, const Snake& snake_to_operate )
 {
 	static int dx[] = { 0, 1, 0, -1, 0 }, dy[] = { 0, 0, 1, 0, -1 };
@@ -108,7 +110,8 @@ void bfs(const Context& ctx, int ret[16][16], int last[16][16], int dist[16][16]
 				continue;
 			if ( ctx.wall_map()[next.x][next.y] != -1 )
 				continue;
-			if(dist[tmp.x][tmp.y] == 0 && i == no_dir[ret[tmp.x][tmp.y]] + 1)
+			//不能回头撞自己
+			if(dist[tmp.x][tmp.y] == 0 && i == no_dir[ret[tmp.x][tmp.y]])
 				continue;
 			if(ret[next.x][next.y] <= -2)
 			{
@@ -146,6 +149,7 @@ void bfs(const Context& ctx, int ret[16][16], int last[16][16], int dist[16][16]
 void bfs_bysnake(const Context& ctx, const Snake& snake, int ret[16][16], int last[16][16], int dist[16][16])
 //ret是自己蛇的id，last存着这个位置的前驱，dist是距离
 {
+	//todo:重写
 	static int dx[] = { 0, 1, 0, -1, 0 }, dy[] = { 0, 0, 1, 0, -1 };
 	int no_dir[5] = {0,0,0,0};//回头撞自己
 	std::queue<Coord> q;
@@ -197,7 +201,7 @@ void bfs_bysnake(const Context& ctx, const Snake& snake, int ret[16][16], int la
 				continue;
 			if ( ctx.wall_map()[next.x][next.y] != -1 )
 				continue;
-			if(dist[tmp.x][tmp.y] == 0 && i == no_dir[ret[tmp.x][tmp.y]] + 1)
+			if(dist[tmp.x][tmp.y] == 0 && i == no_dir[ret[tmp.x][tmp.y]])
 				continue;
 			if(ret[next.x][next.y] <= -2)
 			{
@@ -233,14 +237,14 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 	static int last[16][16];
 	static int dist[16][16];
 	static int cnt = 0;
-	static bool mark[5];
+	static int mark[5]; // 0 = no_task # 1 = eat
 	
 
 	if ( snake_to_operate.id == ctx.my_snakes()[0].id )
 	{
 		cnt = 0;
 		for(int i = 0; i < 4; i++)
-			mark[i] = false, my_op_dist[i] = -1;
+			mark[i] = 0, my_op_dist[i] = -1;
 		
 		bfs(ctx, ret, last, dist);
 		
@@ -250,8 +254,10 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 			if( ret[ctx.item_list()[i].x][ctx.item_list()[i].y] < 0)
 				continue;
 
-			//搜到了合适的蛇，但已经有任务了
-			if(mark[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]])
+			//搜到了合适的蛇，但已经有任务了，找最近的那个
+			if((mark[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] == 1) && 
+			(!(my_op_dist[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] == -1 ||
+					my_op_dist[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] >= dist[ctx.item_list()[i].x][ctx.item_list()[i].y])))
 				continue;
 
 			//道具已经消失
@@ -262,10 +268,6 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 			if ( ctx.item_list()[i].time <= ctx.current_round() + dist[ctx.item_list()[i].x][ctx.item_list()[i].y] &&
 				 ctx.item_list()[i].time + 16 > ctx.current_round() + dist[ctx.item_list()[i].x][ctx.item_list()[i].y] )
 			{
-				//找最近的那个
-				if(!(my_op_dist[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] == -1 ||
-					my_op_dist[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] > dist[ctx.item_list()[i].x][ctx.item_list()[i].y]))
-					continue;
 
 				int dir = last[ctx.item_list()[i].x][ctx.item_list()[i].y];
 				Coord now = { ctx.item_list()[i].x, ctx.item_list()[i].y };
@@ -284,7 +286,7 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 				}
 				
 				my_op[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] = OP[dir];
-				mark[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] = true;
+				mark[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] = 1;
 				my_op_dist[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] = dist[ctx.item_list()[i].x][ctx.item_list()[i].y];
 			}
 		}
