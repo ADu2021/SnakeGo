@@ -891,6 +891,7 @@ inline SnakeGoAI::SnakeGoAI( int argc, char** argv ) : ch( nullptr ), ctx( nullp
 		if ( player == ctx->_current_player )
 		{
 			Operation op = i_just_wanna_eat( ctx->current_snake(), *ctx, op_history );
+			fprintf(stderr,"%d %d\n",ctx->current_snake().id, op.type);
 			append_op( op );
 			ctx->do_operation( op );
 			char msg[] = { 0, 0, 0, 1, (char) op.type };

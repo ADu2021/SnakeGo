@@ -229,7 +229,7 @@ void bfs_bysnake(const Context& ctx, const Snake& snake, int ret[16][16], int la
 }
 
 bool is_dead_end(const Context& ctx, int block[16][16], Coord src, Coord dst)
-// block是不让走的路线，通常是已经走过的path
+// block是不让走的路线，通常是已经走过的path，不能block src
 {
 	static int dx[] = { 0, 1, 0, -1, 0 }, dy[] = { 0, 0, 1, 0, -1 };
 	for(int i = 0; i < 16; i++)
@@ -368,8 +368,8 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 				{
 					fprintf(stderr, "%d %d\n", now.x, now.y);
 					dir = last[now.x][now.y];
-					now = now - Coord(dx[dir], dy[dir]);
 					block[now.x][now.y] = 1;
+					now = now - Coord(dx[dir], dy[dir]);
 				}
 
 				//避免食物陷阱
@@ -443,10 +443,18 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 	int dx[4] = { 1, 0, -1, 0 };
 	int dy[4] = { 0, 1, 0, -1 };
 	//确定合法移动方向
-	//-1代表移动非法，0代表正常移动，1代表移动触发固化
+	//-1代表移动非法，0代表正常移动，1代表移动触发固化,-2代表合法但可能进入死路
 	int move[4] = { 0, 0, 0, 0 };
 	double seal_gain[4] = { 0, 0, 0, 0 };
 	double max_seal_gain = 0; int max_seal_gain_dir = -1;
+
+	static int block[16][16];
+
+	for(int i = 0; i < 16; i++)
+		for(int j = 0; j < 16; j++)
+			block[i][j] = 0;
+				
+
 	for ( int dir = 0; dir < 4; dir++ )
 	{
 		//蛇头到达位置
@@ -504,11 +512,24 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 			}
 			continue;
 		}
+
+		//移动进入死路
+		for(int i = 0; i < 16; i++)
+			for(int j = 0; j < 16; j++)
+				block[i][j] = 0;
+		block[t_x][t_y] = 1;
+		if(is_dead_end(ctx, block, snake_to_operate[0], Coord{t_x, t_y}))
+		{
+			move[dir] = -2;
+			continue;
+		}
 	}
 
 	//尝试固化
 	if(ctx.my_snakes().size() >= 3 && max_seal_gain >= 0.8)
-		return direction[max_seal_gain_dir];
+		//todo:if(snake_to_operate.length() > f(x)),f(x)单调递减
+		if(snake_to_operate.length() >= 10 || (snake_to_operate.length() >= 5 && ctx.current_round() > 480))
+			return direction[max_seal_gain_dir];
 
 	//尝试分裂
 	if(ctx.my_snakes().size() < 4 && snake_to_operate.length() >= 10)
@@ -560,7 +581,7 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 					   abs( snake_to_operate.coord_list.back().y - snake_to_operate.coord_list[0].y );
 		for ( int dir = 0; dir < 4; dir++ )
 		{
-			//移动不合法或固化
+			//移动不合法
 			if ( move[dir] == -1 )
 				continue;
 
@@ -571,20 +592,21 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 			}
 			*/
 
-			//朝向蛇尾方向移动
+			//朝向蛇尾方向移动,不固化
 			int t_x = snake_to_operate.coord_list[0].x + dx[dir];
 			int t_y = snake_to_operate.coord_list[0].y + dy[dir];
 			int dis =
 				abs( snake_to_operate.coord_list.back().x - t_x ) + abs( snake_to_operate.coord_list.back().y - t_y );
 			if ( dis <= distance )
 			{
-				return direction[dir];
+				if(move[dir] == 0)
+					return direction[dir];
 			}
 		}
 	}
 
 	//以上操作均未正常执行，则以如下优先顺序执行该蛇移动方向
-	//向空地方向移动>分裂>向固化方向移动>向右移动
+	//向空地方向移动>分裂>向固化方向移动>向死路移动>向右移动
 	for ( int dir = 0; dir < 4; dir++ )
 	{
 		if ( move[dir] == 0 )
@@ -592,16 +614,22 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 			return direction[dir];
 		}
 	}
-	if(ctx.my_snakes().size() < 4)
+
+	if(ctx.my_snakes().size() < 4 && snake_to_operate.length() >= 2)
 		return OP_SPLIT;
+
 	if(max_seal_gain_dir != -1)
 		return direction[max_seal_gain_dir];
+
+	for ( int dir = 0; dir < 4; dir++ )
+		if ( move[dir] == -2 )
+			return direction[dir];
+
 	if ( ( snake_to_operate.length() > 2 || ( snake_to_operate.length() == 2 && snake_to_operate.length_bank > 0 ) ) &&
 		 snake_to_operate[1].x == snake_to_operate[0].x + dx[0] &&
 		 snake_to_operate[1].y == snake_to_operate[0].y + dy[0] )
 		return OP_LEFT;
-	else
-		return OP_RIGHT;
+	return OP_RIGHT;
 }
 
 bool in_zone(const Coord& coord)
