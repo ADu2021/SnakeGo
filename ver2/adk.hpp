@@ -891,7 +891,6 @@ inline SnakeGoAI::SnakeGoAI( int argc, char** argv ) : ch( nullptr ), ctx( nullp
 		if ( player == ctx->_current_player )
 		{
 			Operation op = i_just_wanna_eat( ctx->current_snake(), *ctx, op_history );
-			fprintf(stderr,"%d %d\n",ctx->current_snake().id, op.type);
 			append_op( op );
 			ctx->do_operation( op );
 			char msg[] = { 0, 0, 0, 1, (char) op.type };
@@ -1010,7 +1009,9 @@ inline void SnakeGoAI::crash() { ::exit( -1 ); }
 
 bool is_valid_operation( const Operation& op, const Context& ctx, const Snake& snake_to_operate );
 
-bool is_dead_end(const Context& ctx, int block[16][16], Coord src, Coord dst);
+bool is_dead_end_path(const Context& ctx, int block[16][16], Coord src, Coord dst);
+
+int move_area(const Context& ctx, const Snake& snake, Coord dst);
 
 void bfs(const Context& ctx, int ret[16][16], int last[16][16], int dist[16][16]);
 

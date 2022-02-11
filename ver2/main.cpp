@@ -1,9 +1,9 @@
 #include "adk.hpp"
 #include <cmath>
 
-#define fprintf //
-
 const int MIN_DST_SIZE = 50;
+
+#define fprintf //
 
 bool is_valid_operation( const Operation& op, const Context& ctx, const Snake& snake_to_operate )
 {
@@ -138,12 +138,12 @@ void bfs(const Context& ctx, int ret[16][16], int last[16][16], int dist[16][16]
 	}
 
 	fprintf(stderr,"round:%d\n",ctx.current_round());
-	for(int i = 0; i < 16; i++)
+	/*for(int i = 0; i < 16; i++)
 	{
 		for(int j = 0; j < 16; j++)
 			fprintf(stderr,"%d ",ret[i][j]);
 		fprintf(stderr,"\n");
-	}
+	}*/
 
 	return;
 }
@@ -228,7 +228,7 @@ void bfs_bysnake(const Context& ctx, const Snake& snake, int ret[16][16], int la
 	}
 }
 
-bool is_dead_end(const Context& ctx, int block[16][16], Coord src, Coord dst)
+bool is_dead_end_path(const Context& ctx, int block[16][16], Coord src, Coord dst)
 // block是不让走的路线，通常是已经走过的path，不能block src
 {
 	static int dx[] = { 0, 1, 0, -1, 0 }, dy[] = { 0, 0, 1, 0, -1 };
@@ -309,6 +309,42 @@ bool is_dead_end(const Context& ctx, int block[16][16], Coord src, Coord dst)
 	return false;
 }
 
+int move_area(const Context& ctx, const Snake& snake, Coord dst)
+{
+	static int dx[] = { 0, 1, 0, -1, 0 }, dy[] = { 0, 0, 1, 0, -1 };
+	std::queue<Coord> q;
+	q.push(dst);
+	int vis[16][16];
+	for(int i = 0; i < 16; i++)
+		for(int j = 0; j < 16; j++)
+			vis[i][j] = 0;
+	vis[dst.x][dst.y] = 1;
+	int vis_cnt = 1;
+	while(!q.empty())
+	{
+		Coord tmp = q.front();
+		q.pop();
+		for(int i = 1; i <= 4; i++)
+		{
+			Coord next = tmp + Coord(dx[i], dy[i]);
+			if(!in_zone(next))
+				continue;
+			if(ctx.wall_map()[next.x][next.y] != -1)
+				continue;
+			if(ctx.snake_map()[next.x][next.y] != -1)
+				continue;
+			//todo:这里的snake_map应该想bfs那样优化一下?
+			if(vis[next.x][next.y] == 0)
+			{
+				q.push(next);
+				vis[next.x][next.y] = 1;
+				vis_cnt++;
+			}
+		}
+	}
+	return vis_cnt;
+}
+
 Operation OP[7] = {OP_RIGHT, OP_RIGHT, OP_UP, OP_LEFT, OP_DOWN, OP_RAILGUN, OP_SPLIT};
 Operation my_op[5];
 int my_op_dist[5];
@@ -320,15 +356,36 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 	static int last[16][16];
 	static int dist[16][16];
 	static int cnt = 0;
-	static int mark[5]; // 0 = no_task # 1 = eat # 5 = railgun
-	
+	static int mark[5]; // 0 = no_task # 1 = eat # 5 = railgun # 6 = split
 
 	if ( snake_to_operate.id == ctx.my_snakes()[0].id )
 	{
 		cnt = 0;
 		for(int i = 0; i < 4; i++)
 			mark[i] = 0, my_op_dist[i] = -1;
+	}
+
+	int snake_my_id = 0;
+	for(int i = 0; i < ctx.my_snakes().size(); i++)
+		if(ctx.my_snakes()[i].id == snake_to_operate.id)
+			snake_my_id = i;
+	
+	//游戏前期，分裂收益较高
+	if(ctx.current_round() <= 64)
+	{
+		//todo:考虑已分配eat任务和split的优先级关系
+		if(ctx.my_snakes().size() <= 2 && snake_to_operate.length() >= 10)
+		{
+			my_op[snake_my_id] = OP_SPLIT;
+			mark[snake_my_id] = 6;
+		}
 		
+	}
+	
+
+	fprintf(stderr,"snake%d @ round%d\n",snake_to_operate.id,ctx.current_round());
+	if ( snake_to_operate.id == ctx.my_snakes()[0].id )
+	{	
 		bfs(ctx, ret, last, dist);
 		
 		for ( int i = 0; i < ctx.item_list().size(); i++ )
@@ -362,18 +419,18 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 				int block[16][16];
 				for(int i = 0; i < 16; i++) for(int j = 0; j < 16; j++) block[i][j] = 0;
 
-				fprintf(stderr,"route:\n");
+				//fprintf(stderr,"route:\n");
 
 				while(now != ctx.my_snakes()[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]].coord_list[0])
 				{
-					fprintf(stderr, "%d %d\n", now.x, now.y);
+					//fprintf(stderr, "%d %d\n", now.x, now.y);
 					dir = last[now.x][now.y];
 					block[now.x][now.y] = 1;
 					now = now - Coord(dx[dir], dy[dir]);
 				}
 
 				//避免食物陷阱
-				if(is_dead_end(ctx,block,ctx.my_snakes()[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]].coord_list[0],{ctx.item_list()[i].x, ctx.item_list()[i].y}))
+				if(is_dead_end_path(ctx,block,ctx.my_snakes()[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]].coord_list[0],{ctx.item_list()[i].x, ctx.item_list()[i].y}))
 					continue;
 				
 				my_op[ret[ctx.item_list()[i].x][ctx.item_list()[i].y]] = OP[dir];
@@ -411,13 +468,13 @@ Operation i_just_wanna_eat( const Snake& snake_to_operate, const Context& ctx, c
 
 	if(mark[cnt])
 	{
-		fprintf(stderr,"by bfs\n\n");
+		fprintf(stderr,"by bfs:snake %d do %d\n",snake_to_operate.id, my_op[cnt].type);
 		++cnt;
 		return my_op[cnt-1];
 	}
 	else
 	{
-		fprintf(stderr,"by default\n\n");
+		fprintf(stderr,"by default\n");
 		++cnt;
 		return make_your_decision(snake_to_operate, ctx, op_list);
 	}
@@ -518,22 +575,52 @@ Operation make_your_decision( const Snake& snake_to_operate, const Context& ctx,
 			for(int j = 0; j < 16; j++)
 				block[i][j] = 0;
 		block[t_x][t_y] = 1;
-		if(is_dead_end(ctx, block, snake_to_operate[0], Coord{t_x, t_y}))
+		if(move_area(ctx,snake_to_operate,Coord{t_x, t_y}) <= 10)
 		{
 			move[dir] = -2;
 			continue;
 		}
 	}
 
+	fprintf(stderr, "move: %d %d %d %d \n", move[0], move[1], move[2], move[3]);
+
 	//尝试固化
-	if(ctx.my_snakes().size() >= 3 && max_seal_gain >= 0.8)
-		//todo:if(snake_to_operate.length() > f(x)),f(x)单调递减
-		if(snake_to_operate.length() >= 10 || (snake_to_operate.length() >= 5 && ctx.current_round() > 480))
+	//todo:if(snake_to_operate.length() > f(x)),f(x)单调递减
+	
+	if(ctx.current_round() > 508)
+	{
+		if(max_seal_gain*seal_expect(snake_to_operate) > snake_to_operate.length()*0.4)
 			return direction[max_seal_gain_dir];
+	}
+	else if(ctx.current_round() > 504)
+	{
+		if(ctx.my_snakes().size() >= 2 &&
+		max_seal_gain*seal_expect(snake_to_operate) > snake_to_operate.length()*0.5)
+			return direction[max_seal_gain_dir];
+	}
+	else if(ctx.current_round() > 500)
+	{
+		if(ctx.my_snakes().size() >= 3 &&
+		max_seal_gain*seal_expect(snake_to_operate) > snake_to_operate.length()*0.6 && 
+			max_seal_gain > 0.75)
+			return direction[max_seal_gain_dir];
+	}
+	else
+	{
+		if((ctx.my_snakes().size() >= 3) && (snake_to_operate.length() >= 9)
+		&& (max_seal_gain*seal_expect(snake_to_operate) > snake_to_operate.length()*0.6))
+		{
+			fprintf(stderr,"here%lf*%d=%lf \n",max_seal_gain,seal_expect(snake_to_operate),max_seal_gain*seal_expect(snake_to_operate));
+			return direction[max_seal_gain_dir];
+		}
+	}
+
+	//	if(snake_to_operate.length() >= 10 || (snake_to_operate.length() >= 5 && ctx.current_round() > 480))
+	//		return direction[max_seal_gain_dir];
 
 	//尝试分裂
 	if(ctx.my_snakes().size() < 4 && snake_to_operate.length() >= 10)
-		return OP_SPLIT;
+		return OP_SPLIT;	
 
 	/*
 	//玩家操控的首条蛇朝向道具移动
@@ -641,8 +728,9 @@ bool in_zone(const Coord& coord)
 
 int seal_expect(const Snake& snake)
 {
-	int tar_x = (snake.length() >> 2);
-	int tar_y = (snake.length() >> 1) - tar_x;
+	int length = snake.length() - 1;
+	int tar_x = ((length / 2) + 2) / 2;
+	int tar_y = (length / 2) + 2 - tar_x;
 	return tar_x * tar_y;
 }
 
@@ -716,8 +804,8 @@ int seal_count(int snake_map[16][16])
 			break;
 		if(snake_map[i][15] == 0)
 		{
-			q.push(Coord{i, 0});
-			snake_map[i][0] = 2;
+			q.push(Coord{i, 15});
+			snake_map[i][15] = 2;
 		}
 	}
 	for(int j = 0; j < 16; j++)
@@ -733,8 +821,8 @@ int seal_count(int snake_map[16][16])
 			break;
 		if(snake_map[15][j] == 0)
 		{
-			q.push(Coord{0, j});
-			snake_map[0][j] = 2;
+			q.push(Coord{15, j});
+			snake_map[15][j] = 2;
 		}
 	}
 	while(!q.empty())
