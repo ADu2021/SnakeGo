@@ -1011,7 +1011,7 @@ bool is_valid_operation( const Operation& op, const Context& ctx, const Snake& s
 
 bool is_dead_end_path(const Context& ctx, int block[16][16], Coord src, Coord dst);
 
-int move_area(const Context& ctx, const Snake& snake, Coord dst);
+int move_area(const Context& ctx, Coord dst);
 
 void bfs(const Context& ctx, int ret[16][16], int last[16][16], int dist[16][16]);
 
